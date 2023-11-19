@@ -1,6 +1,7 @@
-import { PrimaryGeneratedColumn, Column, JoinColumn } from "typeorm";
+import { PrimaryGeneratedColumn, Column, JoinColumn, ManyToOne } from "typeorm";
 import { IAuthorizationEntity } from "../../domain/entities/IAuthotizationEntity";
 import { IUserEntity } from "../../domain/entities/IUserEntity";
+import { RoleEntity } from "./roleEntity";
 
 export class UserEntity implements IUserEntity {
   @PrimaryGeneratedColumn('uuid')
@@ -15,6 +16,7 @@ export class UserEntity implements IUserEntity {
   @Column({ type: 'varchar' })
   password: string;
 
+  @ManyToOne(() => RoleEntity)
   @JoinColumn({ name: 'roleId' })
   role: IAuthorizationEntity;
 }
