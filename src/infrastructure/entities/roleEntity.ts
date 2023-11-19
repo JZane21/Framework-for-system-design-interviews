@@ -7,7 +7,7 @@ export class RoleEntity implements IRoleEntity{
     id: string;
 
     @Column({ type: 'varchar' })
-    name: string;
+    roleName: string;
 
     @Column({ type: 'text' })
     description: string;
