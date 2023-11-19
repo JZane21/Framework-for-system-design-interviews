@@ -4,11 +4,11 @@ import { IRoleEntity } from "../../domain/entities/IRoleEntity";
 @Entity()
 export class RoleEntity implements IRoleEntity{
     @PrimaryGeneratedColumn('uuid')
-    id: string;
+    id!: string;
 
     @Column({ type: 'varchar' })
-    roleName: string;
+    roleName!: string;
 
     @Column({ type: 'text' })
-    description: string;
+    description!: string;
 }
