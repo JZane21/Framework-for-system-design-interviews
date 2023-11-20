@@ -15,4 +15,8 @@ export const db = {
   host: process.env.DB_HOST || 'localhost',
   database: process.env.DB_DATABASE_NAME || 'app',
 }
+
+export const lg = {
+  level: process.env.LOGGER_LEVEL || 'info'
+}
 console.log(db);
