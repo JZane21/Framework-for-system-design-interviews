@@ -1,0 +1,25 @@
+info: ::1 - - [20/Nov/2023:03:40:14 +0000] "GET /roles/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:40:14 -0400"}
+info: ::1 - - [20/Nov/2023:03:40:18 +0000] "GET /roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:40:18 -0400"}
+info: ::1 - - [20/Nov/2023:03:41:53 +0000] "GET /roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:41:53 -0400"}
+info: Usuario obtenido con exito {"timestamp":"19/Nov/2023:23:42:16 -0400"}
+debug: [object Object] {"timestamp":"19/Nov/2023:23:42:16 -0400"}
+info: ::1 - - [20/Nov/2023:03:42:16 +0000] "GET /users/2 HTTP/1.1" 200 139 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:42:16 -0400"}
+info: Usuario obtenido con exito {"timestamp":"19/Nov/2023:23:43:00 -0400"}
+debug: {"id":"2","username":"Jose","email":"Jose@gmail.com","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"19/Nov/2023:23:43:00 -0400"}
+info: ::1 - - [20/Nov/2023:03:43:00 +0000] "GET /users/2 HTTP/1.1" 200 139 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:43:00 -0400"}
+info: ::1 - - [20/Nov/2023:03:45:45 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:45:45 -0400"}
+info: ::1 - - [20/Nov/2023:03:46:17 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:46:17 -0400"}
+info: ::1 - - [20/Nov/2023:03:49:15 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:49:15 -0400"}
+debug: El json dado es:undefined {"timestamp":"19/Nov/2023:23:53:08 -0400"}
+info: ::1 - - [20/Nov/2023:03:53:08 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:53:08 -0400"}
+debug: El json dado es:undefineden el createUserController {"timestamp":"19/Nov/2023:23:53:53 -0400"}
+info: ::1 - - [20/Nov/2023:03:53:53 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:53:53 -0400"}
+debug: El json dado es:undefined en el createUserController {"timestamp":"19/Nov/2023:23:55:41 -0400"}
+info: ::1 - - [20/Nov/2023:03:55:41 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:55:41 -0400"}
+info: ::1 - - [20/Nov/2023:04:00:32 +0000] "POST /roles HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:00:00:32 -0400"}
+info: ::1 - - [20/Nov/2023:04:00:53 +0000] "POST /roles HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:00:00:53 -0400"}
+debug: El json dado es:{"username":"perry","email":"luisAdfdy@gmail","password":"perry3","roleId":"1"} en el createUserController {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+info: Role en createUserService: {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+debug: [object Object] {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+debug: {"username":"perry","email":"luisAdfdy@gmail","passwordHash":"$2b$10$YYT5tmk77eOUfS0NgHlaZOoNSSj2HwsDg3ANWiM8DSdGqUGctz/Ny","role":{"id":"1","roleName":"Recruiter","description":"Role to create interviews"}} {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+info: ::1 - - [20/Nov/2023:04:21:23 +0000] "POST /users HTTP/1.1" 201 251 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:00:21:23 -0400"}

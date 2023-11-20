@@ -1,5 +1,7 @@
 import { Router, Request, Response } from "express";
 import { UserService } from "../../app/services/userService";
+import { CreateUserDTO } from "../../app/dtos/createUserDTO";
+import logger from "../../infrastructure/logger/logger";
 
 export class UserController{
     public router:Router
@@ -23,10 +25,25 @@ export class UserController{
         res.json(userDTO)
     }
 
+    public async createUser(req: Request, res: Response): Promise<Response> {
+        try {
+            const userDto: CreateUserDTO = req.body;
+            logger.debug("El json dado es:" + JSON.stringify(userDto) + " en el createUserController")
+            const user = await this.userService.createUser(userDto);
+            return res.status(201).json(user);
+        } catch (error) {
+            if (error instanceof Error) {
+                console.log(error.message);
+                return res.status(400).json({ message: error.message });
+            }
+            return res.status(400).json({ message: error });
+
+        }
+    }
 
     public routes() {
         this.router.get('/:id', this.getUserById.bind(this));
-        //this.router.post('/', this.createUser.bind(this));
+        this.router.post('/', this.createUser.bind(this));
         //this.router.delete('/:userId', this.deleteUser.bind(this));
         //this.router.put('/:userId', this.updateUser.bind(this));
     }
