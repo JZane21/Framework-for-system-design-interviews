@@ -8,11 +8,13 @@ import { UserRepository } from "../../domain/interfaces/userRepositoy";
 
 import { User } from "../../domain/models/user";
 import logger from "../../infrastructure/logger/logger";
+import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
 
 export class UserService{
-    constructor(private userRepository:UserRepository, private roleRepository: RoleRepository){}
-
+    constructor(private userRepository: UserRepository, private roleRepository: RoleRepository, private redisCacheService: ICacheService) {}
     async getUserById(id:string):Promise<UserDTO | null>{
+        
+        
         const user = await this.userRepository.findById(id)
         if(!user) return null
         const userResponse:UserDTO ={
@@ -20,12 +22,23 @@ export class UserService{
             username: user.username,
             email: user.email,
             role:user.role,
-            interview: user.interview,
             answers:user.answers
         }
-        logger.info("Usuario obtenido con exito:")
+        
+        
+        const userCache = await this.redisCacheService.get(`USER:${id}`);
+        if (userCache){
+            const userResponse = JSON.parse(userCache);
+            logger.info(`UserCache extraido del cache: ${userResponse.email}`);
+            return userResponse;
+        }
+
+
+        logger.info("Usuario obtenido con exito del DB:")
         logger.debug(JSON.stringify(userResponse));
         return userResponse
+
+        
         
     }
 

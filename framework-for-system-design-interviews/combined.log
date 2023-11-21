@@ -546,3 +546,135 @@ info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:07:36:
 info: ::1 - - [21/Nov/2023:11:36:41 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:07:36:41 -0400"}
 info: ::1 - - [21/Nov/2023:11:36:41 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 429 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:07:36:41 -0400"}
 info: ::1 - - [21/Nov/2023:11:36:42 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 429 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:07:36:42 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:48 +0000] "POST /api/auth/login HTTP/1.1" 200 309 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:48 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:08:39:51 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:08:39:51 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:51 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:51 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:08:39:52 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:08:39:52 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:52 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:52 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:08:39:52 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:08:39:52 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:52 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:52 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:08:39:53 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:08:39:53 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:53 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:53 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:54 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 429 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:54 -0400"}
+info: ::1 - - [21/Nov/2023:12:39:55 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 429 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:39:55 -0400"}
+info: UserValidator: Error al ingresar datos {"timestamp":"21/Nov/2023:08:44:34 -0400"}
+info: ::1 - - [21/Nov/2023:12:44:34 +0000] "POST /api/users HTTP/1.1" 400 97 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:44:34 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:08:45:04 -0400"}
+info: ::1 - - [21/Nov/2023:12:45:04 +0000] "POST /api/users HTTP/1.1" 201 280 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:45:04 -0400"}
+warn: InterviewService: Creating interview {"timestamp":"21/Nov/2023:08:46:18 -0400"}
+warn: InterviewRepositoryImpl: Creating interview {"timestamp":"21/Nov/2023:08:46:18 -0400"}
+info: InterviewRepositoryImpl: Created interview. {"timestamp":"21/Nov/2023:08:46:18 -0400"}
+info: InterviewService: Created interview. {"timestamp":"21/Nov/2023:08:46:18 -0400"}
+info: InterviewController: Interview created {"timestamp":"21/Nov/2023:08:46:18 -0400"}
+info: ::1 - - [21/Nov/2023:12:46:18 +0000] "POST /api/interviews HTTP/1.1" 200 180 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:46:18 -0400"}
+info: ::1 - - [21/Nov/2023:12:48:14 +0000] "PUT /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 500 267 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:48:14 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:48:19 -0400"}
+info: InterviewService: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:48:19 -0400"}
+info: InterviewController: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b {"timestamp":"21/Nov/2023:08:48:19 -0400"}
+info: ::1 - - [21/Nov/2023:12:48:19 +0000] "GET /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 302 168 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:48:19 -0400"}
+info: InterviewRepositoryImpl: Updated interview. {"timestamp":"21/Nov/2023:08:50:54 -0400"}
+info: InterviewService: Updated interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:50:54 -0400"}
+info: InterviewController: Updated interview succesfully {"timestamp":"21/Nov/2023:08:50:54 -0400"}
+info: ::1 - - [21/Nov/2023:12:50:54 +0000] "PUT /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 200 166 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:50:54 -0400"}
+warn: QuestionService: Creating Question {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+warn: QuestionRepositoryImpl: Creating Question {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+info: QuestionRepositoryImpl: Created Question. {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+info: QuestionService: Created Question. {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+info: QuestionController: Question created {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+info: ::1 - - [21/Nov/2023:12:54:58 +0000] "POST /api/questions HTTP/1.1" 200 265 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:54:58 -0400"}
+warn: QuestionService: Creating Question {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+warn: QuestionRepositoryImpl: Creating Question {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+info: QuestionRepositoryImpl: Created Question. {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+info: QuestionService: Created Question. {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+info: QuestionController: Question created {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+info: ::1 - - [21/Nov/2023:12:55:14 +0000] "POST /api/questions HTTP/1.1" 200 337 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:55:14 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:55:28 -0400"}
+info: InterviewService: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:08:55:28 -0400"}
+info: InterviewController: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b {"timestamp":"21/Nov/2023:08:55:28 -0400"}
+info: ::1 - - [21/Nov/2023:12:55:28 +0000] "GET /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 302 314 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:55:28 -0400"}
+info: ::1 - - [21/Nov/2023:12:56:20 +0000] "GET /api/question/884a806d-bbc6-4de5-8c43-0de581cf6378 HTTP/1.1" 404 188 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:56:20 -0400"}
+info: ::1 - - [21/Nov/2023:12:56:55 +0000] "GET /api/question/884a806d-bbc6-4de5-8c43-0de581cf6378 HTTP/1.1" 404 188 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:56:55 -0400"}
+info: ::1 - - [21/Nov/2023:12:57:00 +0000] "GET /api/question HTTP/1.1" 404 151 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:57:00 -0400"}
+info: QuestionRepositoryImpl: Gotten Questions. {"timestamp":"21/Nov/2023:08:57:08 -0400"}
+info: QuestionService: Gotten Questions. {"timestamp":"21/Nov/2023:08:57:08 -0400"}
+info: QuestionController: Gotten Questions {"timestamp":"21/Nov/2023:08:57:08 -0400"}
+info: ::1 - - [21/Nov/2023:12:57:08 +0000] "GET /api/questions HTTP/1.1" 200 467 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:08:57:08 -0400"}
+info: ::1 - - [21/Nov/2023:13:01:54 +0000] "GET /api/questionAnswer HTTP/1.1" 404 157 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:01:54 -0400"}
+info: QuestionAnswerRepositoryImpl: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:02:06 -0400"}
+info: QuestionAnswerService: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:02:06 -0400"}
+info: QuestionAnswerController: Gotten QuestionAnswers {"timestamp":"21/Nov/2023:09:02:06 -0400"}
+info: ::1 - - [21/Nov/2023:13:02:06 +0000] "GET /api/questionAnswers HTTP/1.1" 200 48 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:02:06 -0400"}
+info: QuestionAnswerRepositoryImpl: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:02:59 -0400"}
+info: QuestionAnswerService: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:02:59 -0400"}
+info: QuestionAnswerController: Gotten QuestionAnswers {"timestamp":"21/Nov/2023:09:02:59 -0400"}
+info: ::1 - - [21/Nov/2023:13:02:59 +0000] "GET /api/questionAnswers HTTP/1.1" 200 48 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:02:59 -0400"}
+warn: QuestionService: Creating Question {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+warn: QuestionRepositoryImpl: Creating Question {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+info: QuestionRepositoryImpl: Created Question. {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+info: QuestionService: Created Question. {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+info: QuestionController: Question created {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+info: ::1 - - [21/Nov/2023:13:04:15 +0000] "POST /api/questions HTTP/1.1" 200 410 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:04:15 -0400"}
+warn: QuestionService: Creating Question {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+warn: QuestionRepositoryImpl: Creating Question {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+info: QuestionRepositoryImpl: Created Question. {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+info: QuestionService: Created Question. {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+info: QuestionController: Question created {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+info: ::1 - - [21/Nov/2023:13:04:29 +0000] "POST /api/questions HTTP/1.1" 200 483 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:04:29 -0400"}
+info: ::1 - - [21/Nov/2023:13:05:33 +0000] "DELETE /api/question/ce4f8299-0314-40b3-a541-f699241b5ff5 HTTP/1.1" 404 191 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:05:33 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:09:05:58 -0400"}
+info: InterviewService: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:09:05:58 -0400"}
+info: InterviewController: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b {"timestamp":"21/Nov/2023:09:05:58 -0400"}
+info: ::1 - - [21/Nov/2023:13:05:58 +0000] "GET /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 302 460 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:05:58 -0400"}
+info: ::1 - - [21/Nov/2023:13:06:09 +0000] "DELETE /api/question/ce4f8299-0314-40b3-a541-f699241b5ff5 HTTP/1.1" 404 191 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:06:09 -0400"}
+info: QuestionRepositoryImpl: Gotten Questions. {"timestamp":"21/Nov/2023:09:06:29 -0400"}
+info: QuestionService: Gotten Questions. {"timestamp":"21/Nov/2023:09:06:29 -0400"}
+info: QuestionController: Gotten Questions {"timestamp":"21/Nov/2023:09:06:29 -0400"}
+info: ::1 - - [21/Nov/2023:13:06:29 +0000] "GET /api/questions HTTP/1.1" 200 887 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:06:29 -0400"}
+info: QuestionRepositoryImpl: Deleted Question with id: ce4f8299-0314-40b3-a541-f699241b5ff5. {"timestamp":"21/Nov/2023:09:06:53 -0400"}
+info: QuestionService: Deleted Question with id: ce4f8299-0314-40b3-a541-f699241b5ff5. {"timestamp":"21/Nov/2023:09:06:53 -0400"}
+info: QuestionController: deleted Question {"timestamp":"21/Nov/2023:09:06:53 -0400"}
+info: ::1 - - [21/Nov/2023:13:06:53 +0000] "DELETE /api/questions/ce4f8299-0314-40b3-a541-f699241b5ff5 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:06:53 -0400"}
+info: QuestionAnswerRepositoryImpl: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:06:59 -0400"}
+info: QuestionAnswerService: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:06:59 -0400"}
+info: QuestionAnswerController: Gotten QuestionAnswers {"timestamp":"21/Nov/2023:09:06:59 -0400"}
+info: ::1 - - [21/Nov/2023:13:06:59 +0000] "GET /api/questionAnswers HTTP/1.1" 200 48 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:06:59 -0400"}
+info: QuestionAnswerRepositoryImpl: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:08:00 -0400"}
+info: QuestionAnswerService: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:08:00 -0400"}
+info: QuestionAnswerController: Gotten QuestionAnswers {"timestamp":"21/Nov/2023:09:08:00 -0400"}
+info: ::1 - - [21/Nov/2023:13:08:00 +0000] "GET /api/questionAnswers HTTP/1.1" 200 48 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:08:00 -0400"}
+info: QuestionAnswerRepositoryImpl: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:08:53 -0400"}
+info: QuestionAnswerService: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:09:08:53 -0400"}
+info: QuestionAnswerController: Gotten QuestionAnswers {"timestamp":"21/Nov/2023:09:08:53 -0400"}
+info: ::1 - - [21/Nov/2023:13:08:53 +0000] "GET /api/questionAnswers HTTP/1.1" 200 48 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:08:53 -0400"}
+info: ::1 - - [21/Nov/2023:13:09:14 +0000] "POST /api/questionAnswers HTTP/1.1" 500 201 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:09:14 -0400"}
+warn: QuestionAnswerService: Creating QuestionAnswer {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+info: QuestionRepositoryImpl: Gotten Question with id: 4fffa980-42a6-4bb7-956e-f37bb637b296. {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+warn: QuestionAnswerRepositoryImpl: Creating QuestionAnswer {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+info: QuestionAnswerRepositoryImpl: Created QuestionAnswer. {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+info: QuestionAnswerService: Created QuestionAnswer. {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+info: QuestionAnswerController: QuestionAnswer created {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+info: ::1 - - [21/Nov/2023:13:12:16 +0000] "POST /api/questionAnswers HTTP/1.1" 200 173 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:12:16 -0400"}
+error: ROLE VERIFIER: User not found {"timestamp":"21/Nov/2023:09:28:23 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'roleId') {"timestamp":"21/Nov/2023:09:28:23 -0400"}
+info: ::1 - - [21/Nov/2023:13:28:23 +0000] "GET /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 404 35 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:28:23 -0400"}
+info: ::1 - - [21/Nov/2023:13:56:20 +0000] "POST /api/auth/login HTTP/1.1" 200 309 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:56:20 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:09:56:24 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:09:56:24 -0400"}
+info: ::1 - - [21/Nov/2023:13:56:24 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:09:56:24 -0400"}
+info: ::1 - - [21/Nov/2023:14:24:55 +0000] "POST /api/auth/login HTTP/1.1" 200 309 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:10:24:55 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:10:24:58 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:10:24:58 -0400"}
+info: ::1 - - [21/Nov/2023:14:24:58 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:10:24:58 -0400"}
+info: ::1 - - [21/Nov/2023:14:34:39 +0000] "POST /api/auth/login HTTP/1.1" 200 309 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:10:34:39 -0400"}
+info: UserCache extraido del cache: Jose@gmail {"timestamp":"21/Nov/2023:10:34:42 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:10:34:42 -0400"}
+info: ::1 - - [21/Nov/2023:14:34:42 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 270 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:10:34:42 -0400"}

@@ -5,7 +5,7 @@ import { UserService } from "../../app/services/userService";
 import { CreateUserDTO } from "../../app/dtos/createUserDTO";
 import { verifyTokenMiddleware } from "../middlewares/verifyToken";
 import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
-import { createUserValidationRules, getUserValidationRules, userValidationRules, validate } from "../middlewares/userValidator";
+import { createUserValidationRules, validate } from "../middlewares/userValidator";
 
 export class UserController{
     public router:Router

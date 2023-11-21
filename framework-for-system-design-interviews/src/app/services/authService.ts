@@ -7,13 +7,13 @@ import { UserDTO } from "../dtos/userDTO";
 import { User } from "../../domain/models/user";
 import { IUserEntity } from "../../domain/entities/IUserEntity";
 import { EncryptImpl } from "../../infrastructure/utils/encrypt.jwt";
-//import { ICacheService } from "../../domain/interfaces/cacheRepository";
+import { ICacheService } from "../../domain/interfaces/cacheRepository";
 import { UserRepository } from "../../domain/interfaces/userRepositoy";
 
 
 
 export class AuthService {
-    constructor(private userRepository: UserRepository, private encrypt: EncryptImpl/*, private redisCacheService: ICacheService*/) { 
+    constructor(private userRepository: UserRepository, private encrypt: EncryptImpl, private redisCacheService: ICacheService) { 
         this.getCache
     }
 

@@ -55,3 +55,5 @@ error: QuestionRepositoryImpl: Error while getting Question with id: 8119603d-80
 error: QuestionAnswerService: Error while creating QuestionAnswer: TypeError: Cannot read properties of null (reading 'interview'). {"timestamp":"21/Nov/2023:07:35:26 -0400"}
 error: QuestionAnswerController: Error while creating QuestionAnswer {"timestamp":"21/Nov/2023:07:35:26 -0400"}
 >>>>>>> 45539d96c9cc4b719539c724202b2fea31d700dd
+error: ROLE VERIFIER: User not found {"timestamp":"21/Nov/2023:09:28:23 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'roleId') {"timestamp":"21/Nov/2023:09:28:23 -0400"}

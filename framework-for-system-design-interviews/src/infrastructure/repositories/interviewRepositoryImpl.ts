@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-import { AppDataSource } from "../config/dataSource";
-
-import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
-
-=======
->>>>>>> 45539d96c9cc4b719539c724202b2fea31d700dd
 import { InterviewDTO } from "../../app/dtos/interview.dto";
 
 import { InterviewRepository } from "../../domain/interfaces/interviewRepository";
 import { Interview } from "../../domain/models/interview";
-<<<<<<< HEAD
-=======
 import { AppDataSource } from "../config/dataSource";
->>>>>>> 45539d96c9cc4b719539c724202b2fea31d700dd
 import { InterviewEntity } from "../entities/interviewEntity";
 import { loggerPrinter } from "../utils/loggerPrinter";
 

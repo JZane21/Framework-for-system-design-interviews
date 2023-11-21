@@ -1,6 +1,6 @@
 import logger from "../../infrastructure/logger/logger";
 
-import { createInterviewDTOToIInterviewEntity, interviewToInterviewDTO } from '../../adapters/interviewAdapter';
+import { createInterviewDTOToIInterviewEntity, interviewToInterviewDTO } from '../../infrastructure/adapters/interviewAdapter';
 import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
 
 import { IInterviewEntity } from "../../domain/entities/IInterviewEntity";
@@ -8,7 +8,6 @@ import { InterviewRepository } from "../../domain/interfaces/interviewRepository
 import { Interview } from "../../domain/models/interview";
 import { InterviewDTO } from "../dtos/interview.dto";
 import { CreateInterviewDTO } from "../dtos/create.interview.dto";
-import { createInterviewDTOToIInterviewEntity, interviewToInterviewDTO } from '../../infrastructure/adapters/interviewAdapter';
 
 export class InterviewService {
   constructor(private InterviewRepository: InterviewRepository) { }

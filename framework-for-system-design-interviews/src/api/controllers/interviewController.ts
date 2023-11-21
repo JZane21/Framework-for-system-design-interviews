@@ -14,17 +14,18 @@ import {
 } from "../middlewares/interviewMiddleware";
 import { verifyRole } from "../middlewares/verifyRoleUser";
 import { UpdateInterviewDTO } from "../../app/dtos/update.interview.dto";
+import { UserController } from "./userController";
 
 export class InterviewController {
   public router: Router;
   private SECTION: string = "InterviewController";
 
   private interviewService: InterviewService;
-  // private userController: UserController;
+  private userController: UserController;
 
-  constructor(interviewService: InterviewService) {
+  constructor(interviewService: InterviewService/*,userController: UserController*/) {
     this.interviewService = interviewService;
-    // this.userController = userController;
+     //this.userController = userController;
     this.router = Router();
     this.routes();
   }
@@ -33,8 +34,9 @@ export class InterviewController {
     try {
       const { id } = req.params;
       loggerPrinter(this.SECTION, `Getting interview with id: ${id}`, "debug");
-      // const isRecruiterUser = await verifyRole(req.body.idUser, this.userController);
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const idToVerify = this.userController.getUserById
+       const isRecruiterUser = await verifyRole(req.body.idUser);
+      //const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
       const permissionDto = await this.interviewService.getInterviewByID(id, isRecruiterUser);
       if (!permissionDto) {
         loggerPrinter(this.SECTION, `Error while getting interview with id: ${id}`, "error");

@@ -19,20 +19,21 @@ import { QuestionController } from '../controllers/questionController';
 import { QuestionAnswerRepositoryImpl } from '../../infrastructure/repositories/questionAnswerRepositoryImpl';
 import { QuestionAnswerService } from '../../app/services/questionAnswerService';
 import { QuestionAnswerController } from '../controllers/questionAnswerController';
+import { RedisCacheService } from '../../infrastructure/cache/cache';
 
 const encrypt = new EncryptImpl();
 
-//const redisCacheService = new RedisCacheService();
+const redisCacheService = new RedisCacheService();
 
 const roleRepository = new RoleRepositoryImpl();
 const roleService = new RoleService(roleRepository);
 const roleController = new RoleController(roleService);
 
 const userRepository = new UserRepositoryImpl();
-const userService = new UserService(userRepository, roleRepository/*, redisCacheService*/);
+const userService = new UserService(userRepository, roleRepository, redisCacheService);
 const userController = new UserController(userService);
 
-const authService = new AuthService(userRepository, encrypt/*, redisCacheService*/);
+const authService = new AuthService(userRepository, encrypt, redisCacheService);
 const authController = new AuthController(authService);
 
 const API: string = '/api';
