@@ -2,7 +2,7 @@ import { Router, Request, Response } from "express";
 import { InterviewService } from "../../app/services/interviewService";
 import { showError, showErrorResponse, showInfoResponse } from "../utils/responseMessage";
 import { CreateInterviewDTO } from "../../app/dtos/create.interview.dto";
-import { loggerPrinter } from "../../utils/loggerPrinter";
+import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
 import {
   validate,
   interviewValidatorCreationRules,

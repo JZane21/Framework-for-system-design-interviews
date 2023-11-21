@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn,ManyToMany } from "typeorm";
 import { IUserEntity } from '../../domain/entities/IUserEntity';
 import { RoleEntity } from "./roleEntity";
+import { InterviewEntity } from "./interviewEntity";
 @Entity()
 export class UserEntity implements IUserEntity {
     @PrimaryGeneratedColumn("uuid")
@@ -19,13 +20,6 @@ export class UserEntity implements IUserEntity {
     @JoinColumn({ name: 'roleId' })
     role: RoleEntity;
 
-    //import InterviewEntity
-    /*
-    @ManyToMany(() => InterviewEntity)
-    @JoinColumn({
-        interview: InterviewEntity
-    })
-    */
     @Column({ type: 'varchar'})
     answers!: string
 }

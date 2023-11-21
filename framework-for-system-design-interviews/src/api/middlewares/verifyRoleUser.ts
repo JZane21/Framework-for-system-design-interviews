@@ -1,4 +1,4 @@
-import { loggerPrinter } from "../../utils/loggerPrinter";
+import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
 
 export const verifyRole = (idUser: string, userController: any) => {
   const user = userController || undefined;

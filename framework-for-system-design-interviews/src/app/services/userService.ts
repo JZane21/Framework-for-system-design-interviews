@@ -20,6 +20,7 @@ export class UserService{
             username: user.username,
             email: user.email,
             role:user.role,
+            interview: user.interview,
             answers:user.answers
         }
         logger.info("Usuario obtenido con exito:")

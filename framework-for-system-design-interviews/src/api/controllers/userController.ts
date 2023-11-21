@@ -1,10 +1,11 @@
 import { Router, Request, Response } from "express";
+
+import logger from "../../infrastructure/logger/logger";
 import { UserService } from "../../app/services/userService";
 import { CreateUserDTO } from "../../app/dtos/createUserDTO";
-import logger from "../../infrastructure/logger/logger";
 import { verifyTokenMiddleware } from "../middlewares/verifyToken";
 import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
-import { debug } from "console";
+import { createUserValidationRules, getUserValidationRules, userValidationRules, validate } from "../middlewares/userValidator";
 
 export class UserController{
     public router:Router
@@ -76,7 +77,7 @@ export class UserController{
 
     public routes() {
         this.router.get('/:id',verifyTokenMiddleware, this.getUserById.bind(this));
-        this.router.post('/', this.createUser.bind(this));
+        this.router.post('/',createUserValidationRules(),validate, this.createUser.bind(this));
         this.router.delete('/:userId', this.deleteUser.bind(this));
         this.router.put('/:userId', this.updateUser.bind(this));
     }

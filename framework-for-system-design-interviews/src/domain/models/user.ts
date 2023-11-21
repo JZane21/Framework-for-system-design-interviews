@@ -1,3 +1,4 @@
+import { IInterviewEntity } from "../entities/IInterviewEntity";
 import { IRoleEntity } from "../entities/IRoleEntity";
 import { IUserEntity } from "../entities/IUserEntity";
 import { v4 as uuidv4 } from 'uuid';
@@ -8,7 +9,6 @@ export class User{
     email:string;
     passwordHash:string;
     role:IRoleEntity;
-    //interview:IInterviewEntity   ||||| import IInterviewEntity
     answers:string | null;
     token: string | null;
 
@@ -18,6 +18,6 @@ export class User{
         this.passwordHash = userEntity.passwordHash;
         this.email = userEntity.email;
         this.role = userEntity.role;
-        this.answers = userEntity.answers
+        this.answers = userEntity.answers || "";
     }
 }

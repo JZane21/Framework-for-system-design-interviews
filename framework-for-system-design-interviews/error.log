@@ -34,3 +34,6 @@ error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:00:19 -040
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:01:13 -0400"}
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:03:36 -0400"}
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:06:55:32 -0400"}
+error: El usuario con el email: joseValidator@gmail no existe {"timestamp":"21/Nov/2023:07:14:10 -0400"}
+error: La contraseña es incorrecta : joator {"timestamp":"21/Nov/2023:07:33:05 -0400"}

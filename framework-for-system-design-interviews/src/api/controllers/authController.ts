@@ -1,6 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { LoginDTO } from '../../app/dtos/login.dto';
 import { AuthService } from '../../app/services/authService';
+import { loginValidationRules, validate } from '../middlewares/userValidator';
 
 export class AuthController {
     public router: Router;
@@ -24,6 +25,6 @@ export class AuthController {
     }
 
     public routes() {
-        this.router.post('/login', this.login.bind(this));
+        this.router.post('/login',loginValidationRules(),validate, this.login.bind(this));
     }
 }

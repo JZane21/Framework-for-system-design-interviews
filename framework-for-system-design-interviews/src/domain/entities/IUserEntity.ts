@@ -1,3 +1,4 @@
+import { IInterviewEntity } from "./IInterviewEntity";
 import { IRoleEntity } from "./IRoleEntity";
 
 export interface IUserEntity{
@@ -6,6 +7,5 @@ export interface IUserEntity{
     passwordHash:string;
     email:string;
     role:IRoleEntity;
-    //interview:IInterviewEntity ||||||||| import IInterviewEntity
     answers:string
 }

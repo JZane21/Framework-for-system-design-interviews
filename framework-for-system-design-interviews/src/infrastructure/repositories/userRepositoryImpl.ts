@@ -4,6 +4,7 @@ import { AppDataSource } from "../config/dataSource";
 import { UserEntity } from "../entities/userEntity";
 import bcrypt from 'bcrypt'
 import logger from "../logger/logger";
+import { loggerPrinter } from "../utils/loggerPrinter";
 
 export class UserRepositoryImpl implements UserRepository{
     async findById(id:string):Promise<User|null>{
@@ -34,19 +35,21 @@ export class UserRepositoryImpl implements UserRepository{
             email: user.email,
             passwordHash: hash,
             role: user.role,
-            
+            interview: user.interview,
             answers:user.answers
         });
-        logger.debug(JSON.stringify(userEntity)) //debug userEntity          
-
+      
+        loggerPrinter("UserRepository",`Usuario a crear: ${userEntity}`,"debug") //debug userEntity   
         const userResponse = await userRepository.save(userEntity);
 
+        loggerPrinter("UserRepository",`Usuario creado con exito: ${userResponse}`,"debug") //debug userEntity   
         return new User({
             id: userResponse.id,
             username: userResponse.username,
             email: userResponse.email,
             passwordHash: userResponse.passwordHash,
             role: userResponse.role,
+            interview: userResponse.interview,
             answers:userResponse.answers
 
         });
