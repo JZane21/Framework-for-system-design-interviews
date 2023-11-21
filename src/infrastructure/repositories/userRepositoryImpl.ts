@@ -15,6 +15,15 @@ export class UserRepositoryImpl implements UserRepository{
         return user ? new User(user) : null;
     }
 
+    async findByEmail(email: string): Promise<User | null> {
+        const userRepository = AppDataSource.getRepository(UserEntity);
+        const user = await userRepository.findOne({
+            where: { email },
+            relations: ['role']
+        });
+        return user ? new User(user) : null;
+    }
+
     async createUser(user: User): Promise<User> {
         const userRepository = AppDataSource.getRepository(UserEntity);
 
@@ -26,7 +35,7 @@ export class UserRepositoryImpl implements UserRepository{
             passwordHash: hash,
             role: user.role
         });
-        logger.debug(JSON.stringify(userEntity))           
+        logger.debug(JSON.stringify(userEntity)) //debug userEntity          
 
         const userResponse = await userRepository.save(userEntity);
 
@@ -68,6 +77,7 @@ export class UserRepositoryImpl implements UserRepository{
 
         repository.merge(user, updateData);
         const updatedUser = await repository.save(user);
+        logger.debug("updateUser de userRepositoyImpl:" + updatedUser)
         return updatedUser;
     }
 }

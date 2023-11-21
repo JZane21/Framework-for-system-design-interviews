@@ -1,10 +1,13 @@
+import { UserDTO } from "../dtos/userDTO";
+import { CreateUserDTO } from "../dtos/createUserDTO";
+
 import { IUserEntity } from "../../domain/entities/IUserEntity";
+import { ICacheService } from "../../domain/interfaces/cacheRepository";
 import { RoleRepository } from "../../domain/interfaces/roleRepository";
 import { UserRepository } from "../../domain/interfaces/userRepositoy";
+
 import { User } from "../../domain/models/user";
 import logger from "../../infrastructure/logger/logger";
-import { CreateUserDTO } from "../dtos/createUserDTO";
-import { UserDTO } from "../dtos/userDTO";
 
 export class UserService{
     constructor(private userRepository:UserRepository, private roleRepository: RoleRepository){}
@@ -18,7 +21,7 @@ export class UserService{
             email: user.email,
             role:user.role
         }
-        logger.info("Usuario obtenido con exito")
+        logger.info("Usuario obtenido con exito:")
         logger.debug(JSON.stringify(userResponse));
         return userResponse
         
@@ -42,6 +45,16 @@ export class UserService{
         const newUser = new User(userEntity);
 
         return this.userRepository.createUser(newUser);
+    }
+
+    async deleteUser(userId: string): Promise<void> {
+        logger.debug(`UserService: Intentando eliminar al usuario con ID: ${userId}`);
+        await this.userRepository.deleteUser(userId);
+    }
+
+    async updateUser(userId: string, updateData: Partial<CreateUserDTO>): Promise<User> {
+        logger.debug(`UserService: Intentando actualizar al usuario con ID: ${userId}`);
+        return this.userRepository.updateUser(userId, updateData);
     }
 
 }

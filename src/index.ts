@@ -10,6 +10,7 @@ import { env } from './infrastructure/config/config';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import logger from './infrastructure/logger/logger';
+import { routes } from './api/routes/router';
 
 
 AppDataSource.initialize().then(() => {
@@ -30,16 +31,8 @@ AppDataSource.initialize().then(() => {
         res.send('¡Hola Mundo con Express y TypeScript ssssss!');
     });
 
-    const roleRepository = new RoleRepositoryImpl();
-    const roleService = new RoleService(roleRepository);
-    const roleController = new RoleController(roleService);
 
-    const userRepository = new UserRepositoryImpl();
-    const userService = new UserService(userRepository,roleRepository);
-    const userController = new UserController(userService);
-
-    app.use('/users', userController.router);
-    app.use('/roles', roleController.router);
+    routes(app);
 
 
     app.listen(PORT, () => {

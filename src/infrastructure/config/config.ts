@@ -21,7 +21,7 @@ export const lg = {
 
 export const jwt = {
     secretKey:process.env.JWT_SECRET || 'your_secret_key',
-    expirationTime: process.env.JWT_TIME_EXPIRED || '3s'
+    expirationTime: process.env.JWT_TIME_EXPIRED || '10s'
 }
 
 export const redis={
