@@ -15,8 +15,15 @@ export const db = {
   host: process.env.DB_HOST || 'localhost',
   database: process.env.DB_DATABASE_NAME || 'app',
 }
+console.log(db);
 
 export const lg = {
   level: process.env.LOGGER_LEVEL || 'info'
 }
-console.log(db);
+console.log(lg);
+
+export const jwt = {
+  secretKey: process.env.JWT_SECRET || 'your_secret_key',
+  expirationTime: process.env.JWT_EXPIRATION_TIME || '1h'
+}
+console.log(jwt);

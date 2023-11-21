@@ -1,48 +1,81 @@
 import { IInterviewEntity } from "../../domain/entities/IInterviewEntity";
 import { InterviewRepository } from "../../domain/interfaces/interviewRepository";
-import { Form } from "../../domain/models/form";
 import { Interview } from "../../domain/models/interview";
 import logger from "../../infrastructure/logger/logger";
-import { interviewToIInterviewEntity, interviewToInterviewDTO } from "../adapters/interviewAdapter";
+import { createInterviewDTOToIInterviewEntity, interviewToInterviewDTO } from '../../adapters/interviewAdapter';
 import { InterviewDTO } from "../dtos/interview.dto";
+import { CreateInterviewDTO } from "../dtos/create.interview.dto";
+import { loggerPrinter } from "../../utils/loggerPrinter";
 
 export class InterviewService {
   constructor(private InterviewRepository: InterviewRepository) { }
 
-  async getInterviews(): Promise<InterviewDTO[]> {
-    logger.debug(`InterviewService: Trying to get interviews`);
-    const Interviews = await this.InterviewRepository.getInterviews();
-    // const InterviewsFromDB: InterviewDTO[] =
-    //   Interviews.map((Interview: Interview) => interviewToInterviewDTO(Interview)) || [];
-    return Interviews;
+  private SECTION: string = "InterviewService";
+
+  async getInterviews(isRecruiter: boolean): Promise<InterviewDTO[]> {
+    try {
+      loggerPrinter(this.SECTION, "Getting interviews.", "debug");
+      const Interviews = await this.InterviewRepository.getInterviews(isRecruiter);
+      loggerPrinter(this.SECTION, "Gotten interviews.", "info");
+      return Interviews;
+    } catch (error) {
+      loggerPrinter(this.SECTION, `Error while getting interviews: ${error}`, "error");
+      return [];
+    }
   }
 
-  async getInterviewByID(id: string): Promise<InterviewDTO | null> {
-    logger.debug(`InterviewService: Trying to get interview form with id: ${id}`);
-    const Interview = await this.InterviewRepository.findById(id);
-    if (!Interview) {
-      logger.error(`InterviewService: Error trying to get interviewwith id: ${id}`);
+  async getInterviewByID(id: string, isRecruiter: boolean): Promise<InterviewDTO | null> {
+    try {
+      loggerPrinter(this.SECTION, `Getting interview with id: ${id}.`, "debug");
+      const Interview = await this.InterviewRepository.findById(id, isRecruiter);
+      if (!Interview) {
+        logger.error(`InterviewService: Error trying to get interview with id: ${id}`);
+        loggerPrinter(this.SECTION, `Interview didn't find with id: ${id}.`, "error");
+        return null;
+      }
+      loggerPrinter(this.SECTION, `Gotten interview with id: ${id}.`, "info");
+      return interviewToInterviewDTO(Interview);
+    } catch (error) {
+      loggerPrinter(this.SECTION, `Error while getting interview with id: ${id}: ${error}.`, "error");
       return null;
     }
-    return interviewToInterviewDTO(Interview);
   }
 
-  async createInterview(createInterviewDto: InterviewDTO): Promise<InterviewDTO> {
-    logger.debug(`InterviewService: Trying to create an interview`);
-    const interviewEntity: IInterviewEntity = interviewToIInterviewEntity(createInterviewDto);
-
-    const newInterview: Interview = new Interview(interviewEntity);
-
-    return await this.createInterview(newInterview);
+  async createInterview(createInterviewDto: CreateInterviewDTO): Promise<InterviewDTO> {
+    try {
+      loggerPrinter(this.SECTION, "Creating interview", "debug.");
+      const interviewEntity: IInterviewEntity = createInterviewDTOToIInterviewEntity(createInterviewDto);
+      const newInterview: Interview = new Interview(interviewEntity);
+      const answer = await this.InterviewRepository.createInterview(newInterview);
+      loggerPrinter(this.SECTION, "Created interview.", "info");
+      return answer;
+    } catch (error) {
+      loggerPrinter(this.SECTION, `Error while creating interview: ${error}.`, "error");
+      return null;
+    }
   }
 
   async updateFormById(id: string, updatedData: Partial<Interview>): Promise<InterviewDTO> {
-    logger.debug(`InterviewService: Trying to updating interview with id: ${id}`);
-    return this.InterviewRepository.updateInterview(id, updatedData);
+    try {
+      loggerPrinter(this.SECTION, `Updating interview with id: ${id}`, "debug");
+      const answer = await this.InterviewRepository.updateInterview(id, updatedData);
+      loggerPrinter(this.SECTION, `Updated interview with id: ${id}.`, "info");
+      return answer;
+    } catch (error) {
+      loggerPrinter(this.SECTION, `Error while updating interview with id: ${id}: ${error}.`);
+      return null;
+    }
   }
 
   async deleteFormById(id: string): Promise<boolean> {
-    logger.debug(`InterviewService: Trying to delete interview with id: ${id}`);
-    return this.InterviewRepository.deleteInterview(id);
+    try {
+      loggerPrinter(this.SECTION, `Deleting interview with id: ${id}.`, "debug");
+      const answer = await this.InterviewRepository.deleteInterview(id);
+      loggerPrinter(this.SECTION, `Deleted interview with id: ${id}.`, "info");
+      return answer;
+    } catch (error) {
+      loggerPrinter(this.SECTION, `Error while deleting interview with id: ${id}: ${error}.`, "error");
+      return false;
+    }
   }
 }

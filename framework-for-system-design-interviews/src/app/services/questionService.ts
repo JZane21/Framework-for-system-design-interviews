@@ -1,8 +1,9 @@
 import { QuestionRepository } from "../../domain/interfaces/questionRepository";
+import { Question } from "../../domain/models/question";
 import logger from "../../infrastructure/logger/logger";
 import { QuestionDTO } from "../dtos/question.dto";
 
-export class Question {
+export class QuestionService {
   constructor(private questionRepository: QuestionRepository) { }
 
   async getQuestions(): Promise<QuestionDTO[]> {

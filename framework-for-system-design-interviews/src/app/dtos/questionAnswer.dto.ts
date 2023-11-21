@@ -1,5 +1,5 @@
 export interface QuestionAnswerDTO {
   id: string;
-  answer: string;
+  answers: string[];
   rightAnswer: string;
 }

@@ -1,7 +1,9 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 import { db } from '../../infrastructure/config/config';
-import { FormEntity } from "../entities/formEntity";
+import { InterviewEntity } from "../entities/interviewEntity";
+import { QuestionEntity } from "../entities/questionEntity";
+import { QuestionAnswerEntity } from "../entities/questionAnswerEntity";
 
 export const AppDataSource = new DataSource({
   type: db.type as "mysql" | "mariadb" | "postgres" | "mongodb",
@@ -12,7 +14,7 @@ export const AppDataSource = new DataSource({
   database: db.database,
   synchronize: true,
   logging: false,
-  entities: [FormEntity],
+  entities: [InterviewEntity, QuestionEntity, QuestionAnswerEntity],
   subscribers: [],
   migrations: [],
 });

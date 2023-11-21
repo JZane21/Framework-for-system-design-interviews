@@ -2,7 +2,6 @@ import { IQuestionEntity } from "./IQuestionEntity";
 
 export interface IQuestionAnswerEntity {
   id?: string;
-  answer: string;
+  answers: string[];
   rightAnswer: string;
-  question: IQuestionEntity;
 }

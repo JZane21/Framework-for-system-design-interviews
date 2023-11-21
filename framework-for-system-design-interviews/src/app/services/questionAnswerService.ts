@@ -1,8 +1,12 @@
+import { createQuestionAnswerDTOToIQuestionAnswerEntity } from "../../adapters/questionAnswerAdapters";
+import { IQuestionAnswerEntity } from "../../domain/entities/IQuestionAnswerEntity";
 import { QuestionAnswerRepository } from "../../domain/interfaces/questionAnswerRepository";
+import { QuestionAnswer } from "../../domain/models/questionAnswer";
 import logger from "../../infrastructure/logger/logger";
+import { CreateQuestionAnswerDTO } from "../dtos/create.questionAnswer.dto";
 import { QuestionAnswerDTO } from "../dtos/questionAnswer.dto";
 
-export class QuestionAnswer {
+export class QuestionAnswerService {
   constructor(private questionAnswerRepository: QuestionAnswerRepository) { }
 
   async getQuestionAnswers(): Promise<QuestionAnswerDTO[]> {
@@ -31,5 +35,16 @@ export class QuestionAnswer {
   async deleteQuestionAnswerById(id: string): Promise<boolean> {
     logger.debug(`QuestionAnswerService: Trying to delete question answer with id: ${id}`);
     return this.questionAnswerRepository.deleteQuestionAnswer(id);
+  }
+
+  async createQuestionAnswer(createQuestionAnswerDto: CreateQuestionAnswerDTO): Promise<QuestionAnswerDTO> {
+    logger.debug(`QuestionAnswerService: Trying to create an QuestionAnswer`);
+    const question = createQuestionAnswerDTOToIQuestionAnswerEntity(createQuestionAnswerDto);
+    // const QuestionAnswerEntity: IQuestionAnswerEntity = createQuestion;
+
+    // const newQuestionAnswer: QuestionAnswer = new QuestionAnswer(QuestionAnswerEntity);
+
+    // return await this.createQuestionAnswer(newQuestionAnswer);
+    return null;
   }
 }

@@ -1,5 +1,5 @@
-export interface QuestionAnswerDTO {
-  answer: string;
+export interface CreateQuestionAnswerDTO {
+  idUser: string;
+  answers: string[];
   rightAnswer: string;
-  idQuestion: string;
 }
