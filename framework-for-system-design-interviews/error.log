@@ -72,3 +72,17 @@ error: InterviewController: Error while getting interviews with id: 8d31ccb0-930
 error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:40:17 -0400"}
 error: InterviewController: Error while getting interviews with id: [object Object]: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:42:11 -0400"}
 error: InterviewController: Error while getting interviews with id: undefined: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:42:33 -0400"}
+error: QuestionAnswerController: Unauthorized user! {"timestamp":"21/Nov/2023:13:06:28 -0400"}
+error: InterviewController: Error while getting interviews with id: [object Object]: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+error: InterviewController: [object Object] {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:31:09 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:32:35 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:18 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:38 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:39 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:41 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:42 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:43 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:35:38 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:35:55 -0400"}

@@ -10,7 +10,7 @@ export const createUserValidationRules = () =>{
         body("username").isAlphanumeric(),
         body('password').isLength({min:8}),
         body('email').isEmail(),
-        body('roleId').equals("1"||"2")
+        body('roleId').isLength({min:1})
     ]
 }
 

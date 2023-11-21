@@ -823,3 +823,112 @@ info: QuestionAnswerRepositoryImpl: Gotten QuestionAnswers. {"timestamp":"21/Nov
 info: QuestionAnswerService: Gotten QuestionAnswers. {"timestamp":"21/Nov/2023:12:57:31 -0400"}
 info: QuestionAnswerController: Gotten QuestionAnswers {"timestamp":"21/Nov/2023:12:57:31 -0400"}
 info: ::1 - - [21/Nov/2023:16:57:31 +0000] "GET /api/questionAnswers HTTP/1.1" 200 239 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:12:57:31 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:06:28 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:06:28 -0400"}
+error: QuestionAnswerController: Unauthorized user! {"timestamp":"21/Nov/2023:13:06:28 -0400"}
+info: ::1 - - [21/Nov/2023:17:06:28 +0000] "POST /api/questionAnswers HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:06:28 -0400"}
+info: UserValidator: Error al ingresar datos {"timestamp":"21/Nov/2023:13:20:53 -0400"}
+info: ::1 - - [21/Nov/2023:17:20:53 +0000] "POST /api/users HTTP/1.1" 400 187 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:20:53 -0400"}
+info: UserValidator: Error al ingresar datos {"timestamp":"21/Nov/2023:13:21:25 -0400"}
+info: ::1 - - [21/Nov/2023:17:21:25 +0000] "POST /api/users HTTP/1.1" 400 97 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:21:25 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:13:21:45 -0400"}
+info: ::1 - - [21/Nov/2023:17:21:45 +0000] "POST /api/users HTTP/1.1" 201 265 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:21:45 -0400"}
+info: ::1 - - [21/Nov/2023:17:28:34 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:28:34 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:28:38 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:13:28:38 -0400"}
+info: ::1 - - [21/Nov/2023:17:28:38 +0000] "GET /api/users/9e211f8c-d80f-41a1-967c-0147a53e8031 HTTP/1.1" 200 202 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:28:38 -0400"}
+info: ::1 - - [21/Nov/2023:17:28:48 +0000] "GET /api/roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:28:48 -0400"}
+info: ::1 - - [21/Nov/2023:17:28:53 +0000] "GET /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+info: InterviewService: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+info: InterviewController: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+error: InterviewController: Error while getting interviews with id: [object Object]: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:13:28:53 -0400"}
+info: ::1 - - [21/Nov/2023:17:29:32 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:29:32 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:29:34 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:29:34 -0400"}
+info: InterviewRepositoryImpl: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:13:29:35 -0400"}
+info: InterviewService: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b. {"timestamp":"21/Nov/2023:13:29:35 -0400"}
+info: InterviewController: Gotten interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b {"timestamp":"21/Nov/2023:13:29:35 -0400"}
+info: ::1 - - [21/Nov/2023:17:29:35 +0000] "GET /api/interviews/8d31ccb0-9307-4dec-897a-63c88612117b HTTP/1.1" 302 169 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:29:35 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:29:43 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:29:43 -0400"}
+info: QuestionRepositoryImpl: Gotten Questions. {"timestamp":"21/Nov/2023:13:29:43 -0400"}
+info: QuestionService: Gotten Questions. {"timestamp":"21/Nov/2023:13:29:43 -0400"}
+info: QuestionController: Gotten Questions {"timestamp":"21/Nov/2023:13:29:43 -0400"}
+info: ::1 - - [21/Nov/2023:17:29:43 +0000] "GET /api/questions HTTP/1.1" 200 784 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:29:43 -0400"}
+info: ::1 - - [21/Nov/2023:17:30:14 +0000] "POST /api/interviews HTTP/1.1" 401 36 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+error: InterviewController: [object Object] {"timestamp":"21/Nov/2023:13:30:14 -0400"}
+info: ::1 - - [21/Nov/2023:17:31:01 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:31:01 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:31:09 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:31:09 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:31:09 -0400"}
+info: ::1 - - [21/Nov/2023:17:31:09 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:31:09 -0400"}
+info: Usuario con ID: e875debb-d409-444d-978f-2be49038bc77 actualizado con éxito {"timestamp":"21/Nov/2023:13:31:50 -0400"}
+info: ::1 - - [21/Nov/2023:17:31:50 +0000] "PUT /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 193 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:31:50 -0400"}
+info: Usuario con ID: 058bb612-21e1-42c0-8878-a5fbd9061cb1 actualizado con éxito {"timestamp":"21/Nov/2023:13:32:16 -0400"}
+info: ::1 - - [21/Nov/2023:17:32:16 +0000] "PUT /api/users/058bb612-21e1-42c0-8878-a5fbd9061cb1 HTTP/1.1" 200 197 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:32:16 -0400"}
+info: ::1 - - [21/Nov/2023:17:32:19 +0000] "GET /api/users/9e211f8c-d80f-41a1-967c-0147a53e8031 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:32:19 -0400"}
+info: ::1 - - [21/Nov/2023:17:32:23 +0000] "POST /api/auth/login HTTP/1.1" 200 300 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:32:23 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:32:25 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:13:32:25 -0400"}
+info: ::1 - - [21/Nov/2023:17:32:25 +0000] "GET /api/users/9e211f8c-d80f-41a1-967c-0147a53e8031 HTTP/1.1" 200 202 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:32:25 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:32:35 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:32:35 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:32:35 -0400"}
+info: ::1 - - [21/Nov/2023:17:32:35 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:32:35 -0400"}
+info: ::1 - - [21/Nov/2023:17:33:08 +0000] "POST /api/auth/login HTTP/1.1" 200 300 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:33:08 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:33:10 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:13:33:10 -0400"}
+info: ::1 - - [21/Nov/2023:17:33:10 +0000] "GET /api/users/058bb612-21e1-42c0-8878-a5fbd9061cb1 HTTP/1.1" 200 196 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:33:10 -0400"}
+info: Usuario con ID: 058bb612-21e1-42c0-8878-a5fbd9061cb1 actualizado con éxito {"timestamp":"21/Nov/2023:13:33:14 -0400"}
+info: ::1 - - [21/Nov/2023:17:33:14 +0000] "PUT /api/users/058bb612-21e1-42c0-8878-a5fbd9061cb1 HTTP/1.1" 200 197 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:33:14 -0400"}
+info: Usuario con ID: 058bb612-21e1-42c0-8878-a5fbd9061cb1 actualizado con éxito {"timestamp":"21/Nov/2023:13:33:19 -0400"}
+info: ::1 - - [21/Nov/2023:17:33:19 +0000] "PUT /api/users/058bb612-21e1-42c0-8878-a5fbd9061cb1 HTTP/1.1" 200 197 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:33:19 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:33:23 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:13:33:23 -0400"}
+info: ::1 - - [21/Nov/2023:17:33:23 +0000] "GET /api/users/058bb612-21e1-42c0-8878-a5fbd9061cb1 HTTP/1.1" 200 196 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:33:23 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:13:33:52 -0400"}
+info: ::1 - - [21/Nov/2023:17:33:52 +0000] "POST /api/users HTTP/1.1" 201 262 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:33:52 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:06 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:06 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:13 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:13:34:13 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:13 +0000] "GET /api/users/50ed20a5-965d-4954-b034-52d9f0cc5952 HTTP/1.1" 200 184 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:13 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:18 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:34:18 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:18 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:18 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:18 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:38 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:34:38 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:38 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:38 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:38 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:39 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:34:39 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:39 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:39 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:39 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:41 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:34:41 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:41 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:41 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:41 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:42 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:34:42 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:42 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:42 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:42 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:34:43 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:34:43 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:34:43 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:43 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:43 -0400"}
+info: ::1 - - [21/Nov/2023:17:34:48 +0000] "POST /api/interviews HTTP/1.1" 429 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:34:48 -0400"}
+info: ::1 - - [21/Nov/2023:17:35:35 +0000] "POST /api/auth/login HTTP/1.1" 200 291 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:35:35 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:35:38 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:35:38 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:35:38 -0400"}
+info: ::1 - - [21/Nov/2023:17:35:38 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:35:38 -0400"}
+info: Usuario obtenido con exito del DB: {"timestamp":"21/Nov/2023:13:35:55 -0400"}
+info: ROLE VERIFIER: User with role Recruiter found {"timestamp":"21/Nov/2023:13:35:55 -0400"}
+error: InterviewController: Unauthorized user! {"timestamp":"21/Nov/2023:13:35:55 -0400"}
+info: ::1 - - [21/Nov/2023:17:35:55 +0000] "POST /api/interviews HTTP/1.1" 401 53 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:13:35:55 -0400"}
