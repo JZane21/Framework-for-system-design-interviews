@@ -13,6 +13,12 @@ import { AuthService } from '../../app/services/authService';
 import { AuthController } from '../controllers/authController';
 
 import { EncryptImpl } from '../../infrastructure/utils/encrypt.jwt';
+import { QuestionRepositoryImpl } from '../../infrastructure/repositories/questionRepositoryImpl';
+import { QuestionService } from '../../app/services/questionService';
+import { QuestionController } from '../controllers/questionController';
+import { QuestionAnswerRepositoryImpl } from '../../infrastructure/repositories/questionAnswerRepositoryImpl';
+import { QuestionAnswerService } from '../../app/services/questionAnswerService';
+import { QuestionAnswerController } from '../controllers/questionAnswerController';
 
 const encrypt = new EncryptImpl();
 
@@ -25,11 +31,7 @@ const roleController = new RoleController(roleService);
 const userRepository = new UserRepositoryImpl();
 const userService = new UserService(userRepository, roleRepository/*, redisCacheService*/);
 const userController = new UserController(userService);
-/*
-const permissionRepository = new PermissionRepositoryImpl();
-const permissionService = new PermissionService(permissionRepository, roleRepository);
-const permissionController = new PermissionController(permissionService);
-*/
+
 const authService = new AuthService(userRepository, encrypt/*, redisCacheService*/);
 const authController = new AuthController(authService);
 
@@ -39,12 +41,22 @@ const interviewRepository = new InterviewRepositoryImpl();
 const interviewService = new InterviewService(interviewRepository);
 const interviewController = new InterviewController(interviewService);
 
+const questionRepository = new QuestionRepositoryImpl();
+const questionService = new QuestionService(questionRepository, interviewRepository);
+const questionController = new QuestionController(questionService);
+
+const questionAnswerRepository = new QuestionAnswerRepositoryImpl();
+const questionAnswerService = new QuestionAnswerService(questionAnswerRepository, interviewRepository, questionRepository);
+const questionAnswerController = new QuestionAnswerController(questionAnswerService);
+
 export const routes = (server: express.Application) => {
   const router = express.Router();
   router.use('/interviews', interviewController.router);
   router.use('/users', userController.router);
   router.use('/roles', roleController.router);
   router.use('/auth', authController.router);
+  router.use('/questions', questionController.router);
+  router.use('/questionAnswers', questionAnswerController.router);
   //router.use('/permissions', permissionController.router);
 
   server.use(API, router);

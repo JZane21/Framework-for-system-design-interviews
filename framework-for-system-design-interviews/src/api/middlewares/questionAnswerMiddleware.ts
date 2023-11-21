@@ -1,15 +1,43 @@
-import { body, check, validationResult } from "express-validator";
+import { body, check, param, validationResult } from "express-validator";
 import { showErrorResponse } from "../utils/responseMessage";
 import { Request, Response, NextFunction } from "express";
 
-export const questionAnswerValidatorRules = () => {
+export const questionAnswerValidatorCreationRules = () => {
   return [
-    body("idInterview").isAlphanumeric().isLength({ min: 36, max: 36 }),
-    body("statement").isAlphanumeric().isLength({ min: 8 }),
-    body('correctAnswer').isObject(),
-    body('correctAnswer.answers').isArray().isLength({ min: 2 }),
-    body('correctAnswer.answers.*').isAlphanumeric().isLength({ min: 1 }),
-    body('correctAnswer.rightAnswer').isAlphanumeric().isLength({ min: 1 }),
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+    body("answers").isString().isLength({ min: 1 }),
+    body("rightAnswer").isString().isLength({ min: 1 }),
+    body("questionId").isUUID().isLength({ min: 36, max: 36 }),
+  ];
+};
+
+export const questionAnswerValidatorUpdateRules = () => {
+  return [
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+    param("id").isUUID().isLength({ min: 36, max: 36 }),
+    body("questionId").isUUID().isLength({ min: 36, max: 36 }),
+    body("answers").isString().isLength({ min: 1 }),
+    body("rightAnswer").isString().isLength({ min: 1 }),
+  ];
+};
+
+export const questionAnswerValidatorDeleteRules = () => {
+  return [
+    param("id").isUUID().isLength({ min: 36, max: 36 }),
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+  ];
+};
+
+export const questionAnswerValidatorGetByIdRules = () => {
+  return [
+    param("id").isUUID().isLength({ min: 36, max: 36 }),
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+  ];
+};
+
+export const questionAnswerValidatorGetRules = () => {
+  return [
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
   ];
 };
 

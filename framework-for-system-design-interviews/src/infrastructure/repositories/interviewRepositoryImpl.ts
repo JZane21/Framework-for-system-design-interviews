@@ -1,10 +1,9 @@
-import { error } from "console";
 import { InterviewDTO } from "../../app/dtos/interview.dto";
 import { InterviewRepository } from "../../domain/interfaces/interviewRepository";
 import { Interview } from "../../domain/models/interview";
-import { loggerPrinter } from "../../utils/loggerPrinter";
 import { AppDataSource } from "../config/dataSource";
 import { InterviewEntity } from "../entities/interviewEntity";
+import { loggerPrinter } from "../utils/loggerPrinter";
 
 export class InterviewRepositoryImpl implements InterviewRepository {
   private SECTION: string = "InterviewRepositoryImpl";

@@ -2,10 +2,10 @@ import { IInterviewEntity } from "../../domain/entities/IInterviewEntity";
 import { InterviewRepository } from "../../domain/interfaces/interviewRepository";
 import { Interview } from "../../domain/models/interview";
 import logger from "../../infrastructure/logger/logger";
-import { createInterviewDTOToIInterviewEntity, interviewToInterviewDTO } from '../../adapters/interviewAdapter';
+import { createInterviewDTOToIInterviewEntity, interviewToInterviewDTO } from '../../infrastructure/adapters/interviewAdapter';
 import { InterviewDTO } from "../dtos/interview.dto";
 import { CreateInterviewDTO } from "../dtos/create.interview.dto";
-import { loggerPrinter } from "../../utils/loggerPrinter";
+import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
 
 export class InterviewService {
   constructor(private InterviewRepository: InterviewRepository) { }

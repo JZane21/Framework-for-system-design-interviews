@@ -34,3 +34,18 @@ error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:00:19 -040
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:01:13 -0400"}
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:03:36 -0400"}
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+error: QuestionRepositoryImpl: Error while getting Question: EntityPropertyNotFoundError: Property "questions" was not found in "QuestionEntity". Make sure your query is correct.. {"timestamp":"21/Nov/2023:05:18:58 -0400"}
+error: QuestionController: Error while getting Questions {"timestamp":"21/Nov/2023:05:18:58 -0400"}
+error: QuestionAnswerRepositoryImpl: Error while getting QuestionAnswer: EntityPropertyNotFoundError: Property "interview" was not found in "QuestionAnswerEntity". Make sure your query is correct.. {"timestamp":"21/Nov/2023:06:31:16 -0400"}
+error: QuestionAnswerController: Error while getting QuestionAnswers {"timestamp":"21/Nov/2023:06:31:16 -0400"}
+error: QuestionAnswerRepositoryImpl: Error while getting QuestionAnswer: EntityPropertyNotFoundError: Property "interview" was not found in "QuestionAnswerEntity". Make sure your query is correct.. {"timestamp":"21/Nov/2023:06:33:13 -0400"}
+error: QuestionAnswerController: Error while getting QuestionAnswers {"timestamp":"21/Nov/2023:06:33:13 -0400"}
+error: QuestionAnswerRepositoryImpl: QuestionAnswer did't find. {"timestamp":"21/Nov/2023:07:18:16 -0400"}
+error: QuestionAnswerRepositoryImpl: Error while deleting QuestionAnswer. {"timestamp":"21/Nov/2023:07:18:16 -0400"}
+error: QuestionAnswerController: Error while deleting QuestionAnswer {"timestamp":"21/Nov/2023:07:18:16 -0400"}
+error: QuestionRepositoryImpl: Error while getting Question with id: 8119603d-80a0-4cf7-98e6-3a65ec1998f0: TypeError: Cannot read properties of null (reading 'id'). {"timestamp":"21/Nov/2023:07:34:03 -0400"}
+error: QuestionAnswerService: Error while creating QuestionAnswer: TypeError: Cannot read properties of null (reading 'interview'). {"timestamp":"21/Nov/2023:07:34:03 -0400"}
+error: QuestionAnswerController: Error while creating QuestionAnswer {"timestamp":"21/Nov/2023:07:34:03 -0400"}
+error: QuestionRepositoryImpl: Error while getting Question with id: 8119603d-80a0-4cf7-98e6-3a65ec1998f0: TypeError: Cannot read properties of null (reading 'id'). {"timestamp":"21/Nov/2023:07:35:26 -0400"}
+error: QuestionAnswerService: Error while creating QuestionAnswer: TypeError: Cannot read properties of null (reading 'interview'). {"timestamp":"21/Nov/2023:07:35:26 -0400"}
+error: QuestionAnswerController: Error while creating QuestionAnswer {"timestamp":"21/Nov/2023:07:35:26 -0400"}

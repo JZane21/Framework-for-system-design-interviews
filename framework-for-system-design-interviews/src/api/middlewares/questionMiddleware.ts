@@ -1,20 +1,42 @@
-import { body, check, validationResult } from "express-validator";
+import { body, check, param, validationResult } from "express-validator";
 import { showErrorResponse } from "../utils/responseMessage";
 import { Request, Response, NextFunction } from "express";
 
 export const questionValidatorCreationRules = () => {
   return [
-    body("idInterview").isAlphanumeric().isLength({ min: 36, max: 36 }),
-    body("statement").isAlphanumeric().isLength({ min: 8 }),
-    body('correctAnswer').isObject(),
-    body('correctAnswer.answers').isArray().isLength({ min: 2 }),
-    body('correctAnswer.answers.*').isAlphanumeric().isLength({ min: 1 }),
-    body('correctAnswer.rightAnswer').isAlphanumeric().isLength({ min: 1 }),
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+    body("statement").isString().isLength({ min: 8 }),
+    body("interviewId").isUUID().isLength({ min: 36, max: 36 }),
   ];
 };
 
-export const questionValidatorUpdateRule = () => {
-  
+export const questionValidatorUpdateRules = () => {
+  return [
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+    param("id").isUUID().isLength({ min: 36, max: 36 }),
+    body("statement").isString().isLength({ min: 1 }),
+    body("interviewId").isUUID().isLength({ min: 36, max: 36 }),
+  ];
+};
+
+export const questionValidatorDeleteRules = () => {
+  return [
+    param("id").isUUID().isLength({ min: 36, max: 36 }),
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+  ];
+};
+
+export const questionValidatorGetByIdRules = () => {
+  return [
+    param("id").isUUID().isLength({ min: 36, max: 36 }),
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+  ];
+};
+
+export const questionValidatorGetRules = () => {
+  return [
+    body("idUser").isUUID().isLength({ min: 36, max: 36 }),
+  ];
 };
 
 export const validate = (req: Request, res: Response, next: NextFunction) => {
