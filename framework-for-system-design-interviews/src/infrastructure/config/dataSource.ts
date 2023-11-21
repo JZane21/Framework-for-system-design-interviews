@@ -4,6 +4,8 @@ import { db } from '../../infrastructure/config/config';
 import { InterviewEntity } from "../entities/interviewEntity";
 import { QuestionEntity } from "../entities/questionEntity";
 import { QuestionAnswerEntity } from "../entities/questionAnswerEntity";
+import { UserEntity } from "../entities/userEntity";
+import { RoleEntity } from "../entities/roleEntity";
 
 export const AppDataSource = new DataSource({
   type: db.type as "mysql" | "mariadb" | "postgres" | "mongodb",
@@ -14,7 +16,7 @@ export const AppDataSource = new DataSource({
   database: db.database,
   synchronize: true,
   logging: false,
-  entities: [InterviewEntity, QuestionEntity, QuestionAnswerEntity],
+  entities: [InterviewEntity, QuestionEntity, QuestionAnswerEntity, UserEntity, RoleEntity],
   subscribers: [],
   migrations: [],
 });

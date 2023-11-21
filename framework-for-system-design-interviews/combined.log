@@ -1,45 +1,477 @@
-info: ::1 - - [21/Nov/2023:01:18:47 +0000] "GET /api/interviews HTTP/1.1" 500 191 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:18:47 -0400"}
-info: ::1 - - [21/Nov/2023:01:20:22 +0000] "GET /api/interviews HTTP/1.1" 500 233 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:20:22 -0400"}
-info: ::1 - - [21/Nov/2023:01:21:12 +0000] "GET /api/interviews HTTP/1.1" 500 273 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:21:12 -0400"}
-info: ::1 - - [21/Nov/2023:01:21:54 +0000] "GET /api/interviews HTTP/1.1" 500 165 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:21:54 -0400"}
-info: ::1 - - [21/Nov/2023:01:22:50 +0000] "GET /api/interviews HTTP/1.1" 500 165 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:22:50 -0400"}
-info: ::1 - - [21/Nov/2023:01:24:06 +0000] "GET /api/interviews HTTP/1.1" 500 165 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:24:06 -0400"}
-info: ::1 - - [21/Nov/2023:01:24:16 +0000] "GET /api/interviews HTTP/1.1" 500 165 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:24:16 -0400"}
-info: ::1 - - [21/Nov/2023:01:24:24 +0000] "GET /api/interviews HTTP/1.1" 500 165 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:24:24 -0400"}
-info: ::1 - - [21/Nov/2023:01:25:09 +0000] "GET /api/interviews HTTP/1.1" 500 165 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:25:09 -0400"}
-debug: InterviewController: Getting interviews {"timestamp":"20/Nov/2023:21:25:35 -0400"}
-info: ::1 - - [21/Nov/2023:01:25:48 +0000] "GET /api/interviews HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:25:48 -0400"}
-debug: InterviewController: Getting interviews {"timestamp":"20/Nov/2023:21:27:29 -0400"}
-info: ::1 - - [21/Nov/2023:01:27:29 +0000] "GET /api/interviews HTTP/1.1" 200 18 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:27:29 -0400"}
-debug: InterviewController: Getting interviews {"timestamp":"20/Nov/2023:21:29:05 -0400"}
-info: ::1 - - [21/Nov/2023:01:29:05 +0000] "GET /api/interviews HTTP/1.1" 200 18 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:29:05 -0400"}
-debug: InterviewController: Getting interviews {"timestamp":"20/Nov/2023:21:39:31 -0400"}
-debug: InterviewService: Trying to get interviews {"timestamp":"20/Nov/2023:21:39:31 -0400"}
-error: InterviewController: Error while getting interviews {"timestamp":"20/Nov/2023:21:39:31 -0400"}
-info: ::1 - - [21/Nov/2023:01:39:31 +0000] "GET /api/interviews HTTP/1.1" 404 55 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:39:31 -0400"}
-debug: InterviewController: Getting interviews {"timestamp":"20/Nov/2023:21:39:57 -0400"}
-debug: InterviewService: Trying to get interviews {"timestamp":"20/Nov/2023:21:39:57 -0400"}
-info: InterviewController: Gotten interviews {"timestamp":"20/Nov/2023:21:39:57 -0400"}
-info: ::1 - - [21/Nov/2023:01:39:57 +0000] "GET /api/interviews HTTP/1.1" 200 2 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:39:57 -0400"}
-debug: InterviewController: Getting interviews {"timestamp":"20/Nov/2023:21:40:12 -0400"}
-debug: InterviewService: Trying to get interviews {"timestamp":"20/Nov/2023:21:40:12 -0400"}
-info: InterviewController: Gotten interviews {"timestamp":"20/Nov/2023:21:40:12 -0400"}
-info: ::1 - - [21/Nov/2023:01:40:12 +0000] "GET /api/interviews HTTP/1.1" 200 2 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:40:12 -0400"}
-info: ::1 - - [21/Nov/2023:03:02:04 +0000] "POST /api/interviews HTTP/1.1" 500 245 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:02:04 -0400"}
-debug: InterviewController: Creating interview {"timestamp":"20/Nov/2023:23:02:50 -0400"}
-debug: InterviewService: Trying to create an interview {"timestamp":"20/Nov/2023:23:02:50 -0400"}
-info: InterviewController: Interview created {"timestamp":"20/Nov/2023:23:02:50 -0400"}
-info: ::1 - - [21/Nov/2023:03:02:50 +0000] "POST /api/interviews HTTP/1.1" 200 177 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:02:50 -0400"}
-info: ::1 - - [21/Nov/2023:03:05:57 +0000] "GET /api/interviews/0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 HTTP/1.1" 500 191 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:05:57 -0400"}
-debug: InterviewController: Getting interview with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:06:12 -0400"}
-debug: InterviewService: Trying to get interview form with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:06:12 -0400"}
-debug: InterviewController: Getting interview with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:08:54 -0400"}
-debug: InterviewController: Getting interview with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:09:10 -0400"}
-debug: InterviewService: Trying to get interview form with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:09:10 -0400"}
-debug: InterviewRepositoryImpl: Getting Interview by ID {"timestamp":"20/Nov/2023:23:09:10 -0400"}
-info: InterviewController: Gotten interview with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:09:10 -0400"}
-info: ::1 - - [21/Nov/2023:03:09:10 +0000] "GET /api/interviews/0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 HTTP/1.1" 200 116 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:09:10 -0400"}
-debug: InterviewController: Updaing interview {"timestamp":"20/Nov/2023:23:27:07 -0400"}
-debug: InterviewService: Trying to updating interview with id: 0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 {"timestamp":"20/Nov/2023:23:27:07 -0400"}
-info: InterviewController: Updated interview succesfully {"timestamp":"20/Nov/2023:23:27:07 -0400"}
-info: ::1 - - [21/Nov/2023:03:27:07 +0000] "PUT /api/interviews/0bfff88b-3ace-4c93-acd9-0d8b8d9f9276 HTTP/1.1" 200 166 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:27:07 -0400"}
+info: ::1 - - [20/Nov/2023:03:40:14 +0000] "GET /roles/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:40:14 -0400"}
+info: ::1 - - [20/Nov/2023:03:40:18 +0000] "GET /roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:40:18 -0400"}
+info: ::1 - - [20/Nov/2023:03:41:53 +0000] "GET /roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:41:53 -0400"}
+info: Usuario obtenido con exito {"timestamp":"19/Nov/2023:23:42:16 -0400"}
+debug: [object Object] {"timestamp":"19/Nov/2023:23:42:16 -0400"}
+info: ::1 - - [20/Nov/2023:03:42:16 +0000] "GET /users/2 HTTP/1.1" 200 139 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:42:16 -0400"}
+info: Usuario obtenido con exito {"timestamp":"19/Nov/2023:23:43:00 -0400"}
+debug: {"id":"2","username":"Jose","email":"Jose@gmail.com","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"19/Nov/2023:23:43:00 -0400"}
+info: ::1 - - [20/Nov/2023:03:43:00 +0000] "GET /users/2 HTTP/1.1" 200 139 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:43:00 -0400"}
+info: ::1 - - [20/Nov/2023:03:45:45 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:45:45 -0400"}
+info: ::1 - - [20/Nov/2023:03:46:17 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:46:17 -0400"}
+info: ::1 - - [20/Nov/2023:03:49:15 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:49:15 -0400"}
+debug: El json dado es:undefined {"timestamp":"19/Nov/2023:23:53:08 -0400"}
+info: ::1 - - [20/Nov/2023:03:53:08 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:53:08 -0400"}
+debug: El json dado es:undefineden el createUserController {"timestamp":"19/Nov/2023:23:53:53 -0400"}
+info: ::1 - - [20/Nov/2023:03:53:53 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:53:53 -0400"}
+debug: El json dado es:undefined en el createUserController {"timestamp":"19/Nov/2023:23:55:41 -0400"}
+info: ::1 - - [20/Nov/2023:03:55:41 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.35.0" {"timestamp":"19/Nov/2023:23:55:41 -0400"}
+info: ::1 - - [20/Nov/2023:04:00:32 +0000] "POST /roles HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:00:00:32 -0400"}
+info: ::1 - - [20/Nov/2023:04:00:53 +0000] "POST /roles HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:00:00:53 -0400"}
+debug: El json dado es:{"username":"perry","email":"luisAdfdy@gmail","password":"perry3","roleId":"1"} en el createUserController {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+info: Role en createUserService: {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+debug: [object Object] {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+debug: {"username":"perry","email":"luisAdfdy@gmail","passwordHash":"$2b$10$YYT5tmk77eOUfS0NgHlaZOoNSSj2HwsDg3ANWiM8DSdGqUGctz/Ny","role":{"id":"1","roleName":"Recruiter","description":"Role to create interviews"}} {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+info: ::1 - - [20/Nov/2023:04:21:23 +0000] "POST /users HTTP/1.1" 201 251 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:00:21:23 -0400"}
+debug: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:24:40 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:24:40 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:15:24:40 -0400"}
+info: ::1 - - [20/Nov/2023:19:24:40 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:24:40 -0400"}
+debug: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:24:59 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:24:59 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:15:24:59 -0400"}
+info: ::1 - - [20/Nov/2023:19:24:59 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:24:59 -0400"}
+debug: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:25:24 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:25:24 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:15:25:24 -0400"}
+info: ::1 - - [20/Nov/2023:19:25:24 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:25:24 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:26:32 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:26:32 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:15:26:32 -0400"}
+info: ::1 - - [20/Nov/2023:19:26:32 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:26:32 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:41:23 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:41:23 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:15:41:23 -0400"}
+info: ::1 - - [20/Nov/2023:19:41:23 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:41:23 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574 {"timestamp":"20/Nov/2023:15:41:39 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574 {"timestamp":"20/Nov/2023:15:41:39 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574. {"timestamp":"20/Nov/2023:15:41:39 -0400"}
+error: Error al actualizar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:15:41:39 -0400"}
+info: ::1 - - [20/Nov/2023:19:41:39 +0000] "PUT /users/4f936757-3634-4787-8fec-7cd580d1b574 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:41:39 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574 {"timestamp":"20/Nov/2023:15:42:15 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574 {"timestamp":"20/Nov/2023:15:42:15 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574. {"timestamp":"20/Nov/2023:15:42:15 -0400"}
+error: Error al actualizar al usuario con ID: 4f936757-3634-4787-8fec-7cd580d1b574. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:15:42:15 -0400"}
+info: ::1 - - [20/Nov/2023:19:42:15 +0000] "PUT /users/4f936757-3634-4787-8fec-7cd580d1b574 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:42:15 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:57:31 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:57:31 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:15:57:31 -0400"}
+info: ::1 - - [20/Nov/2023:19:57:31 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:57:31 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:15:58:55 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:15:58:55 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 3. {"timestamp":"20/Nov/2023:15:58:55 -0400"}
+error: Error al actualizar al usuario con ID: 3. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:15:58:55 -0400"}
+info: ::1 - - [20/Nov/2023:19:58:55 +0000] "PUT /users/3 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:58:55 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:59:38 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:15:59:38 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:15:59:38 -0400"}
+info: Usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 actualizado con éxito {"timestamp":"20/Nov/2023:15:59:38 -0400"}
+info: ::1 - - [20/Nov/2023:19:59:38 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:15:59:38 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:01:01 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:01:01 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:16:01:01 -0400"}
+info: ::1 - - [20/Nov/2023:20:01:01 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:16:01:01 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:01:23 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:01:23 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:16:01:23 -0400"}
+info: Usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 actualizado con éxito {"timestamp":"20/Nov/2023:16:01:23 -0400"}
+info: ::1 - - [20/Nov/2023:20:01:23 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 200 178 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:16:01:23 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:15:31 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:15:31 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: QueryFailedError: ER_DUP_ENTRY: Duplicate entry 'luisAdfdy@gmail' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f' {"timestamp":"20/Nov/2023:16:15:31 -0400"}
+info: ::1 - - [20/Nov/2023:20:15:31 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:16:15:31 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:15:38 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:15:38 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:16:15:39 -0400"}
+info: Usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 actualizado con éxito {"timestamp":"20/Nov/2023:16:15:39 -0400"}
+info: ::1 - - [20/Nov/2023:20:15:39 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 200 181 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:16:15:39 -0400"}
+debug: Intentando eliminar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:18:12 -0400"}
+debug: UserService: Intentando eliminar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:16:18:12 -0400"}
+info: Usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 eliminado con éxito {"timestamp":"20/Nov/2023:16:18:12 -0400"}
+info: ::1 - - [20/Nov/2023:20:18:12 +0000] "DELETE /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 200 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:16:18:12 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:21:09:45 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95 {"timestamp":"20/Nov/2023:21:09:45 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. {"timestamp":"20/Nov/2023:21:09:45 -0400"}
+error: Error al actualizar al usuario con ID: 6192542e-81a3-4557-9697-a62454f92a95. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:21:09:45 -0400"}
+info: ::1 - - [21/Nov/2023:01:09:45 +0000] "PUT /users/6192542e-81a3-4557-9697-a62454f92a95 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:09:45 -0400"}
+debug: El json dado es:{"username":"perry","email":"luisAdfdy@gmail","password":"perry3","roleId":"1"} en el createUserController {"timestamp":"20/Nov/2023:21:09:59 -0400"}
+info: Role en createUserService: {"timestamp":"20/Nov/2023:21:09:59 -0400"}
+debug: [object Object] {"timestamp":"20/Nov/2023:21:09:59 -0400"}
+debug: {"username":"perry","email":"luisAdfdy@gmail","passwordHash":"$2b$10$qFzWsZ.wSAIXGfpxwDQaweZWW6Q0ZSGpBo0EjyEtogEnYh4akGtgq","role":{"id":"1","roleName":"Recruiter","description":"Role to create interviews"}} {"timestamp":"20/Nov/2023:21:10:00 -0400"}
+info: ::1 - - [21/Nov/2023:01:10:00 +0000] "POST /users HTTP/1.1" 201 251 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:10:00 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 {"timestamp":"20/Nov/2023:21:10:09 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 {"timestamp":"20/Nov/2023:21:10:09 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:21:10:09 -0400"}
+info: Usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 actualizado con éxito {"timestamp":"20/Nov/2023:21:10:09 -0400"}
+info: ::1 - - [21/Nov/2023:01:10:09 +0000] "PUT /users/7504b9c1-4fc7-42d9-b2a2-3de819204114 HTTP/1.1" 200 185 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:10:09 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 {"timestamp":"20/Nov/2023:21:10:15 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 {"timestamp":"20/Nov/2023:21:10:15 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:21:10:15 -0400"}
+info: Usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 actualizado con éxito {"timestamp":"20/Nov/2023:21:10:15 -0400"}
+info: ::1 - - [21/Nov/2023:01:10:15 +0000] "PUT /users/7504b9c1-4fc7-42d9-b2a2-3de819204114 HTTP/1.1" 200 185 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:10:15 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:26:58 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:26:58 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 3. {"timestamp":"20/Nov/2023:21:26:58 -0400"}
+error: Error al actualizar al usuario con ID: 3. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:21:26:58 -0400"}
+info: ::1 - - [21/Nov/2023:01:26:58 +0000] "PUT /users/3 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:26:58 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:27:21 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:27:21 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 3. {"timestamp":"20/Nov/2023:21:27:21 -0400"}
+error: Error al actualizar al usuario con ID: 3. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:21:27:21 -0400"}
+info: ::1 - - [21/Nov/2023:01:27:21 +0000] "PUT /users/3 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:27:21 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:30:03 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:30:03 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 3. {"timestamp":"20/Nov/2023:21:30:03 -0400"}
+error: Error al actualizar al usuario con ID: 3. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:21:30:03 -0400"}
+info: ::1 - - [21/Nov/2023:01:30:03 +0000] "PUT /users/3 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:30:03 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:30:38 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:30:38 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 3. {"timestamp":"20/Nov/2023:21:30:38 -0400"}
+error: Error al actualizar al usuario con ID: 3. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:21:30:38 -0400"}
+info: ::1 - - [21/Nov/2023:01:30:38 +0000] "PUT /users/3 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:30:38 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:30:47 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 3 {"timestamp":"20/Nov/2023:21:30:47 -0400"}
+error: UserRepository: Error al modificar al usuario con ID: 3. {"timestamp":"20/Nov/2023:21:30:47 -0400"}
+error: Error al actualizar al usuario con ID: 3. Error: Error: Usuario no encontrado {"timestamp":"20/Nov/2023:21:30:47 -0400"}
+info: ::1 - - [21/Nov/2023:01:30:47 +0000] "PUT /users/3 HTTP/1.1" 500 44 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:30:47 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: 2 {"timestamp":"20/Nov/2023:21:30:57 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: 2 {"timestamp":"20/Nov/2023:21:30:57 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:21:30:57 -0400"}
+info: Usuario con ID: 2 actualizado con éxito {"timestamp":"20/Nov/2023:21:30:57 -0400"}
+info: ::1 - - [21/Nov/2023:01:30:57 +0000] "PUT /users/2 HTTP/1.1" 200 90 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:30:57 -0400"}
+info: ::1 - - [21/Nov/2023:01:31:25 +0000] "GET /api/users/1 HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:31:25 -0400"}
+info: ::1 - - [21/Nov/2023:01:31:34 +0000] "GET /api/users/2 HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:31:34 -0400"}
+info: ::1 - - [21/Nov/2023:01:31:37 +0000] "GET /api/users/1 HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:31:37 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:21:50:44 -0400"}
+debug: {"id":"2","username":"Andssres","email":"Andres@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:21:50:44 -0400"}
+info: ::1 - - [21/Nov/2023:01:50:44 +0000] "GET /users/2 HTTP/1.1" 200 141 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:50:44 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:21:51:08 -0400"}
+debug: {"id":"2","username":"Andssres","email":"Andres@gmail"} {"timestamp":"20/Nov/2023:21:51:08 -0400"}
+info: ::1 - - [21/Nov/2023:01:51:08 +0000] "GET /users/2 HTTP/1.1" 200 55 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:51:08 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:21:52:00 -0400"}
+debug: {"id":"2","username":"Andssres","email":"Andres@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:21:52:00 -0400"}
+info: ::1 - - [21/Nov/2023:01:52:00 +0000] "GET /users/2 HTTP/1.1" 200 141 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:52:00 -0400"}
+info: ::1 - - [21/Nov/2023:01:57:02 +0000] "GET /api/users/2 HTTP/1.1" 500 1639 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:21:57:02 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:05:04 -0400"}
+debug: {"id":"2","username":"Andssres","email":"Andres@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:05:04 -0400"}
+info: ::1 - - [21/Nov/2023:02:05:04 +0000] "GET /api/users/2 HTTP/1.1" 200 141 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:05:04 -0400"}
+info: ::1 - - [21/Nov/2023:02:05:25 +0000] "POST /users HTTP/1.1" 404 145 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:05:25 -0400"}
+debug: El json dado es:{"username":"Jose","email":"Jose@gmail","password":"jose3","roleId":"2"} en el createUserController {"timestamp":"20/Nov/2023:22:05:45 -0400"}
+info: Role en createUserService: {"timestamp":"20/Nov/2023:22:05:45 -0400"}
+debug: [object Object] {"timestamp":"20/Nov/2023:22:05:45 -0400"}
+debug: {"username":"Jose","email":"Jose@gmail","passwordHash":"$2b$10$jS2EOGBzBlvHxJvSp9PLLOCisxT5UF6culOBrZw45XT8Fi2zcjety","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:05:46 -0400"}
+info: ::1 - - [21/Nov/2023:02:05:46 +0000] "POST /api/users HTTP/1.1" 201 248 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:05:46 -0400"}
+debug: UserController: Intentando actualizar al usuario con ID: e875debb-d409-444d-978f-2be49038bc77 {"timestamp":"20/Nov/2023:22:06:51 -0400"}
+debug: UserService: Intentando actualizar al usuario con ID: e875debb-d409-444d-978f-2be49038bc77 {"timestamp":"20/Nov/2023:22:06:51 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:22:06:51 -0400"}
+info: Usuario con ID: e875debb-d409-444d-978f-2be49038bc77 actualizado con éxito {"timestamp":"20/Nov/2023:22:06:51 -0400"}
+info: ::1 - - [21/Nov/2023:02:06:51 +0000] "PUT /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 180 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:06:51 -0400"}
+debug: Intentando eliminar al usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 {"timestamp":"20/Nov/2023:22:08:51 -0400"}
+debug: UserService: Intentando eliminar al usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 {"timestamp":"20/Nov/2023:22:08:51 -0400"}
+info: Usuario con ID: 7504b9c1-4fc7-42d9-b2a2-3de819204114 eliminado con éxito {"timestamp":"20/Nov/2023:22:08:51 -0400"}
+info: ::1 - - [21/Nov/2023:02:08:51 +0000] "DELETE /api/users/7504b9c1-4fc7-42d9-b2a2-3de819204114 HTTP/1.1" 200 42 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:08:51 -0400"}
+info: ::1 - - [21/Nov/2023:02:09:24 +0000] "GET /api/roles1 HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:09:24 -0400"}
+info: ::1 - - [21/Nov/2023:02:09:31 +0000] "GET /api/roles/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:09:31 -0400"}
+info: ::1 - - [21/Nov/2023:02:09:34 +0000] "GET /api/roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:09:34 -0400"}
+info: ::1 - - [21/Nov/2023:02:13:15 +0000] "GET /api/roles/2 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:13:15 -0400"}
+info: ::1 - - [21/Nov/2023:02:13:17 +0000] "GET /api/roles/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:13:17 -0400"}
+error: La contraseña es incorrecta : 4651ds5dsf {"timestamp":"20/Nov/2023:22:19:34 -0400"}
+info: ::1 - - [21/Nov/2023:02:19:34 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:19:34 -0400"}
+error: La contraseña es incorrecta : 4651ds5dsf {"timestamp":"20/Nov/2023:22:20:01 -0400"}
+info: ::1 - - [21/Nov/2023:02:20:01 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:20:01 -0400"}
+error: El usuario con el email: Jose@gmailcom no existe {"timestamp":"20/Nov/2023:22:21:02 -0400"}
+info: ::1 - - [21/Nov/2023:02:21:02 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:21:02 -0400"}
+error: La contraseña es incorrecta : $2b$10$jS2EOGBzBlvHxJvSp9PLLOCisxT5UF6culOBrZw45XT8Fi2zcjety {"timestamp":"20/Nov/2023:22:22:27 -0400"}
+info: ::1 - - [21/Nov/2023:02:22:27 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:22:27 -0400"}
+error: La contraseña es incorrecta : njdsfnss {"timestamp":"20/Nov/2023:22:23:49 -0400"}
+info: ::1 - - [21/Nov/2023:02:23:49 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:23:49 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:25:44 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:25:44 -0400"}
+info: ::1 - - [21/Nov/2023:02:25:44 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:25:44 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:27:05 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","password":"$2b$10$jS2EOGBzBlvHxJvSp9PLLOCisxT5UF6culOBrZw45XT8Fi2zcjety","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:27:05 -0400"}
+info: ::1 - - [21/Nov/2023:02:27:05 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 253 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:27:05 -0400"}
+error: La contraseña es incorrecta : $2b$10$jS2EOGBzBlvHxJvSp9PLLOCisxT5UF6culOBrZw45XT8Fi2zcjety {"timestamp":"20/Nov/2023:22:44:13 -0400"}
+info: ::1 - - [21/Nov/2023:02:44:13 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:44:13 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:22:53:29 -0400"}
+info: ::1 - - [21/Nov/2023:02:53:29 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:53:29 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:03 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:03 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:03 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:03 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:05 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:05 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:05 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:05 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:07 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:07 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:07 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:07 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:08 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:08 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:08 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:08 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:09 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:09 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:09 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:09 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:09 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:09 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:09 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:09 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:10 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:10 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:10 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:10 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:10 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:10 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:10 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:10 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:11 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:11 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:11 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:11 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:12 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:12 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:12 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:12 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:12 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:12 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:12 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:12 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:13 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:13 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:13 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:13 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:23 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:23 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:23 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:23 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:25 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:25 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:25 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:25 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:25 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:25 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:25 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:25 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:26 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:26 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:26 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:26 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:47 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:47 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:47 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:47 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:49 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:49 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:49 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:49 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:50 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:50 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:50 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:50 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:50 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:50 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:50 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:50 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:51 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:51 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:51 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:51 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:51 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:51 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:51 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:51 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:52 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:52 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:52 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:52 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:52 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:52 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:52 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:52 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:53 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:53 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:53 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:53 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:54 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:54 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:54 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:54 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:55 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:55 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:55 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:55 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:54:55 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:54:55 -0400"}
+info: ::1 - - [21/Nov/2023:02:54:55 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:54:55 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:22:55:10 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:10 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:10 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:18 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:18 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:18 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:18 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:21 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:21 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:21 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:21 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:23 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:23 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:23 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:23 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:24 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:24 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:24 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:24 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:25 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:25 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:25 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:25 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:25 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:25 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:25 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:25 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:26 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:26 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:26 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:26 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:26 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:26 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:26 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:26 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:27 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:27 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:27 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:27 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:28 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:28 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:28 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:28 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:28 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:28 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:28 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:28 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:30 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:30 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:30 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:30 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:30 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:30 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:30 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:30 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:31 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:31 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:31 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:31 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:55:32 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:55:32 -0400"}
+info: ::1 - - [21/Nov/2023:02:55:32 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:55:32 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:57:29 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:57:29 -0400"}
+info: ::1 - - [21/Nov/2023:02:57:29 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:57:29 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:22:57:31 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:22:57:31 -0400"}
+info: ::1 - - [21/Nov/2023:02:57:31 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:22:57:31 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:23:28:55 -0400"}
+info: ::1 - - [21/Nov/2023:03:28:55 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:28:55 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:05 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:05 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:05 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:05 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:10 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:10 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:10 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:10 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:14 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:14 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:14 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:14 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:15 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:15 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:15 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:15 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:16 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:16 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:16 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:16 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:17 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:17 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:17 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:17 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:35 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:35 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:35 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:35 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:36 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:36 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:36 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:36 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:37 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:37 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:37 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:37 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:37 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:37 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:37 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:37 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:38 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:38 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:38 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:38 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:39 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:39 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:39 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:39 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:29:40 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:29:40 -0400"}
+info: ::1 - - [21/Nov/2023:03:29:40 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:29:40 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:30:32 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:30:32 -0400"}
+info: ::1 - - [21/Nov/2023:03:30:32 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:30:32 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:30:33 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:30:33 -0400"}
+info: ::1 - - [21/Nov/2023:03:30:33 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:30:33 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:30:35 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:30:35 -0400"}
+info: ::1 - - [21/Nov/2023:03:30:35 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:30:35 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:30:36 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:30:36 -0400"}
+info: ::1 - - [21/Nov/2023:03:30:36 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:30:36 -0400"}
+info: ::1 - - [21/Nov/2023:03:33:13 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 401 36 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:33:13 -0400"}
+info: ::1 - - [21/Nov/2023:03:33:25 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:33:25 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:23:33:28 -0400"}
+info: ::1 - - [21/Nov/2023:03:33:28 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:33:28 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:33:31 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:33:31 -0400"}
+info: ::1 - - [21/Nov/2023:03:33:31 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:33:31 -0400"}
+info: ::1 - - [21/Nov/2023:03:33:46 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:33:46 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"20/Nov/2023:23:51:42 -0400"}
+info: ::1 - - [21/Nov/2023:03:51:42 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:51:42 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"20/Nov/2023:23:51:45 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"20/Nov/2023:23:51:45 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"20/Nov/2023:23:51:45 -0400"}
+info: ::1 - - [21/Nov/2023:03:51:45 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:51:45 -0400"}
+info: ::1 - - [21/Nov/2023:04:11:58 +0000] "GET /api/roles/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:11:58 -0400"}
+info: ::1 - - [21/Nov/2023:04:59:39 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:59:39 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"21/Nov/2023:00:59:43 -0400"}
+info: ::1 - - [21/Nov/2023:04:59:43 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:59:43 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+info: ::1 - - [21/Nov/2023:04:59:46 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2"} {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$7wqhH1i9TfpvYJ5sZayPTed.rqkSvZgVsmVIDA3znmG00SdCKwFwK","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+info: ::1 - - [21/Nov/2023:05:00:19 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$/VLtNSZ9X8eZYVscXpgIlehE.Hn7GgjB6m3Gw4ISIx6pqhzXBZ4Dq","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+info: ::1 - - [21/Nov/2023:05:01:13 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$f6cMo4kv9pepiU2mvEewIOb9ggQlSi/grzqZCzC8A1/GyFFW.uQhK","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+info: ::1 - - [21/Nov/2023:05:03:36 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$ufI1GmuvmQx9RvhEFenc2ecLwRF84aSXQZ8/p1Dck4juQSxtDfkom","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+info: ::1 - - [21/Nov/2023:05:04:29 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+info: ::1 - - [21/Nov/2023:05:08:13 +0000] "POST /api/users HTTP/1.1" 201 264 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"21/Nov/2023:01:09:49 -0400"}
+info: ::1 - - [21/Nov/2023:05:09:49 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:09:49 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"},"answers":""} {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+info: ::1 - - [21/Nov/2023:05:09:53 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+debug: updateUser de userRepositoyImpl:{"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:11:51 -0400"}
+info: ::1 - - [21/Nov/2023:05:11:51 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:11:51 -0400"}
+info: ::1 - - [21/Nov/2023:05:12:01 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:12:01 -0400"}
+debug: updateUser de userRepositoyImpl:{"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:12:12 -0400"}
+info: ::1 - - [21/Nov/2023:05:12:12 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:12:12 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+debug: {"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"},"answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+info: ::1 - - [21/Nov/2023:05:12:19 +0000] "GET /api/users/c83f18e1-55a5-4a89-8700-bb99eed9ffe0 HTTP/1.1" 200 204 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+info: ::1 - - [21/Nov/2023:05:27:56 +0000] "GET /api/users/c83f18e1-55a5-4a89-8700-bb99eed9ffe0 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:27:56 -0400"}
+info: ::1 - - [21/Nov/2023:05:28:00 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:28:00 -0400"}
+debug: updateUser de userRepositoyImpl:{"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:28:46 -0400"}
+info: ::1 - - [21/Nov/2023:05:28:46 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:28:46 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:01:28:49 -0400"}
+debug: {"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"},"answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:28:49 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:01:28:49 -0400"}
+info: ::1 - - [21/Nov/2023:05:28:49 +0000] "GET /api/users/c83f18e1-55a5-4a89-8700-bb99eed9ffe0 HTTP/1.1" 200 204 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:28:49 -0400"}
+info: ::1 - - [21/Nov/2023:05:59:23 +0000] "POST /api/roles HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:59:23 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:02:10:17 -0400"}
+info: ::1 - - [21/Nov/2023:06:10:17 +0000] "POST /api/users HTTP/1.1" 201 282 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:10:17 -0400"}
+info: ::1 - - [21/Nov/2023:06:12:42 +0000] "POST /auth/login HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:12:42 -0400"}
+info: ::1 - - [21/Nov/2023:06:12:51 +0000] "POST /auth/login HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:12:51 -0400"}
+info: ::1 - - [21/Nov/2023:06:13:26 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:13:26 -0400"}
+info: ::1 - - [21/Nov/2023:06:15:02 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:15:02 -0400"}
+info: ::1 - - [21/Nov/2023:06:15:09 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:15:09 -0400"}
+info: ::1 - - [21/Nov/2023:06:15:12 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:15:12 -0400"}
+info: ::1 - - [21/Nov/2023:06:15:15 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:15:15 -0400"}
+info: ::1 - - [21/Nov/2023:06:16:11 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:16:11 -0400"}
+info: ::1 - - [21/Nov/2023:06:18:22 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:18:22 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:02:18:25 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:02:18:25 -0400"}
+info: ::1 - - [21/Nov/2023:06:18:25 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 200 204 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:18:25 -0400"}
+info: ::1 - - [21/Nov/2023:06:18:37 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:18:37 -0400"}
