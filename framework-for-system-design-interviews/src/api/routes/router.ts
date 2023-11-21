@@ -10,17 +10,18 @@ import { AuthService } from '../../app/services/authService';
 import { AuthController } from '../controllers/authController';
 
 import { EncryptImpl } from '../../infrastructure/utils/encrypt.jwt';
+import { RedisCacheService } from '../../infrastructure/cache/cache';
 
 const encrypt = new EncryptImpl();
 
-//const redisCacheService = new RedisCacheService();
+const redisCacheService = new RedisCacheService();
 
 const roleRepository = new RoleRepositoryImpl();
 const roleService = new RoleService(roleRepository);
 const roleController = new RoleController(roleService);
 
 const userRepository = new UserRepositoryImpl();
-const userService = new UserService(userRepository, roleRepository/*, redisCacheService*/);
+const userService = new UserService(userRepository, roleRepository, redisCacheService);
 const userController = new UserController(userService);
 /*
 const permissionRepository = new PermissionRepositoryImpl();

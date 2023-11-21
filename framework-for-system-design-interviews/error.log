@@ -34,3 +34,7 @@ error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:00:19 -040
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:01:13 -0400"}
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:03:36 -0400"}
 error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+error: UserController: User not found {"timestamp":"21/Nov/2023:02:39:04 -0400"}
+error: La contraseña es incorrecta : Jose3 {"timestamp":"21/Nov/2023:02:44:55 -0400"}
+error: UserController: User not found {"timestamp":"21/Nov/2023:02:49:20 -0400"}
+error: UserController: User not found {"timestamp":"21/Nov/2023:02:52:43 -0400"}

@@ -19,15 +19,15 @@ export class UserController{
     public async getUserById(req:Request, res:Response):Promise<void>{
         const {id} = req.params;
         const userDTO = await this.userService.getUserById(id);
-        loggerPrinter("UserController","User retrived succesfully","info")
-
-    
+        
+        
         if(!userDTO){
             loggerPrinter("UserController","User not found","error")
             res.status(404).json({message: 'User not found'})
             return;
         }
-
+        
+        loggerPrinter("UserController","User retrived succesfully","info")
         res.json(userDTO)
     }
 

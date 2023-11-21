@@ -25,6 +25,6 @@ export const jwt = {
 }
 
 export const redis={
-    url:process.env.REDIS_URL || "localhost"
+    url:process.env.REDIS_URL ||"redis://default:Kks9MOeCTS7NrHDumOy0GjmrnWQWg8tt@redis-11830.c253.us-central1-1.gce.cloud.redislabs.com:11830"
     
 }
