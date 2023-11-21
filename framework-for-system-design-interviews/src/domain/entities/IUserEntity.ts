@@ -1,9 +1,11 @@
-import { IAuthorizationEntity } from "./IAuthotizationEntity";
+import { IRoleEntity } from "./IRoleEntity";
 
-export interface IUserEntity {
-  id?: string;
-  username: string;
-  email: string;
-  password: string;
-  role: IAuthorizationEntity;
+export interface IUserEntity{
+    id?:string;
+    username:string;
+    passwordHash:string;
+    email:string;
+    role:IRoleEntity;
+    //interview:IInterviewEntity ||||||||| import IInterviewEntity
+    answers:string
 }

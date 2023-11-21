@@ -1,22 +1,31 @@
-import { PrimaryGeneratedColumn, Column, JoinColumn, ManyToOne } from "typeorm";
-import { IAuthorizationEntity } from "../../domain/entities/IAuthotizationEntity";
-import { IUserEntity } from "../../domain/entities/IUserEntity";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn,ManyToMany } from "typeorm";
+import { IUserEntity } from '../../domain/entities/IUserEntity';
 import { RoleEntity } from "./roleEntity";
-
+@Entity()
 export class UserEntity implements IUserEntity {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
+    @PrimaryGeneratedColumn("uuid")
+    id!: string;
 
-  @Column({ type: 'varchar' })
-  username: string;
+    @Column({ type: 'varchar' })
+    username!: string;
 
-  @Column({ type: 'varchar' })
-  email: string;
+    @Column({ type: 'varchar', unique: true })
+    email!: string;
 
-  @Column({ type: 'varchar' })
-  password: string;
+    @Column({ type: 'varchar' })
+    passwordHash!: string;
 
-  @ManyToOne(() => RoleEntity)
-  @JoinColumn({ name: 'roleId' })
-  role: IAuthorizationEntity;
+    @ManyToOne(() => RoleEntity)
+    @JoinColumn({ name: 'roleId' })
+    role: RoleEntity;
+
+    //import InterviewEntity
+    /*
+    @ManyToMany(() => InterviewEntity)
+    @JoinColumn({
+        interview: InterviewEntity
+    })
+    */
+    @Column({ type: 'varchar'})
+    answers!: string
 }
