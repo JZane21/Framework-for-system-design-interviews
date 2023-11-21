@@ -475,3 +475,17 @@ info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:02:18:25 -0400"}
 info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:02:18:25 -0400"}
 info: ::1 - - [21/Nov/2023:06:18:25 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 200 204 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:18:25 -0400"}
 info: ::1 - - [21/Nov/2023:06:18:37 +0000] "GET /api/users/7bd36a99-a213-44a2-af54-6e58788f27de HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:02:18:37 -0400"}
+info: ::1 - - [21/Nov/2023:07:03:47 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:03:03:47 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:03:03:50 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:03:03:50 -0400"}
+info: ::1 - - [21/Nov/2023:07:03:50 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:03:03:50 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:03:03:52 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:03:03:52 -0400"}
+info: ::1 - - [21/Nov/2023:07:03:52 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:03:03:52 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:03:03:54 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:03:03:54 -0400"}
+info: ::1 - - [21/Nov/2023:07:03:54 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:03:03:54 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:03:03:56 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:03:03:56 -0400"}
+info: ::1 - - [21/Nov/2023:07:03:56 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:03:03:56 -0400"}
+info: ::1 - - [21/Nov/2023:07:03:57 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:03:03:57 -0400"}
