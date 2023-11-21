@@ -14,16 +14,20 @@ import { verifyRole } from "../middlewares/verifyRoleUser";
 import { UpdateQuestionDTO } from "../../app/dtos/update.question.dto";
 import { CreateQuestionDTO } from "../../app/dtos/create.question.dto";
 import { Question } from "../../domain/models/question";
+import { UserService } from "../../app/services/userService";
+import { QuestionAnswerService } from "../../app/services/questionAnswerService";
 
 export class QuestionController {
   public router: Router;
   private SECTION: string = "QuestionController";
-
+  private userService: UserService;
   private QuestionService: QuestionService;
   // private userController: UserController;
 
-  constructor(QuestionService: QuestionService) {
+  constructor(QuestionService: QuestionService,userService: UserService) {
     this.QuestionService = QuestionService;
+    this.userService = userService;
+
     // this.userController = userController;
     this.router = Router();
     this.routes();
@@ -34,7 +38,7 @@ export class QuestionController {
       const { id } = req.params;
       loggerPrinter(this.SECTION, `Getting Question with id: ${id}`, "debug");
       // const isRecruiterUser = await verifyRole(req.body.idUser, this.userController);
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser,this.userService);
       const permissionDto = await this.QuestionService.getQuestionByID(id, isRecruiterUser);
       if (!permissionDto) {
         loggerPrinter(this.SECTION, `Error while getting Question with id: ${id}`, "error");
@@ -52,7 +56,7 @@ export class QuestionController {
   public async getQuestions(req: Request, res: Response): Promise<void> {
     try {
       loggerPrinter(this.SECTION, `Getting Questions`, "debug");
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser,this.userService);
       const QuestionsDto = await this.QuestionService.getQuestions(isRecruiterUser);
       if (!QuestionsDto) {
         loggerPrinter(this.SECTION, `Error while getting Questions`, "error");
@@ -71,7 +75,7 @@ export class QuestionController {
     try {
       loggerPrinter(this.SECTION, `Creating Question`, "debug");
       const QuestionDto: CreateQuestionDTO = req.body;
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser,this.userService);
       if (isRecruiterUser) {
         const Question = await this.QuestionService.createQuestion(QuestionDto, isRecruiterUser);
         if (!Question) {
@@ -95,7 +99,7 @@ export class QuestionController {
       loggerPrinter(this.SECTION, `Updaing Question`, "debug");
       const { id } = req.params;
       const updateData: UpdateQuestionDTO = req.body;
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser,this.userService);
       if (isRecruiterUser) {
         const updatedQuestion = await this.QuestionService.updateFormById(id, updateData);
         loggerPrinter(this.SECTION, `Updated Question succesfully`, "info");
@@ -114,7 +118,7 @@ export class QuestionController {
     try {
       loggerPrinter(this.SECTION, `deleting Question`, "debug");
       const { id } = req.params;
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser,this.userService);
       if (isRecruiterUser) {
         const deleted: boolean = await this.QuestionService.deleteFormById(id);
         if (!deleted) {

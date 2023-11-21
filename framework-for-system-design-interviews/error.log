@@ -57,3 +57,18 @@ error: QuestionAnswerController: Error while creating QuestionAnswer {"timestamp
 >>>>>>> 45539d96c9cc4b719539c724202b2fea31d700dd
 error: ROLE VERIFIER: User not found {"timestamp":"21/Nov/2023:09:28:23 -0400"}
 error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'roleId') {"timestamp":"21/Nov/2023:09:28:23 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:11:19:26 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:12:07:53 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:12:15:24 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:12:16:45 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:12:17:58 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:12:19:50 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: TypeError: Cannot read properties of undefined (reading 'getUserById') {"timestamp":"21/Nov/2023:12:20:07 -0400"}
+error: InterviewRepositoryImpl: Error while getting interview with id: [object Object]: QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'idUser' in 'where clause'. {"timestamp":"21/Nov/2023:12:24:19 -0400"}
+error: InterviewService: Error trying to get interview with id: [object Object] {"timestamp":"21/Nov/2023:12:24:19 -0400"}
+error: InterviewService: Interview didn't find with id: [object Object]. {"timestamp":"21/Nov/2023:12:24:19 -0400"}
+error: InterviewController: Error while getting interview with id: 8d31ccb0-9307-4dec-897a-63c88612117b {"timestamp":"21/Nov/2023:12:24:19 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:28:09 -0400"}
+error: InterviewController: Error while getting interviews with id: 8d31ccb0-9307-4dec-897a-63c88612117b: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:40:17 -0400"}
+error: InterviewController: Error while getting interviews with id: [object Object]: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:42:11 -0400"}
+error: InterviewController: Error while getting interviews with id: undefined: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"timestamp":"21/Nov/2023:12:42:33 -0400"}

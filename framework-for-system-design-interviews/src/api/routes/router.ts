@@ -40,15 +40,15 @@ const API: string = '/api';
 
 const interviewRepository = new InterviewRepositoryImpl();
 const interviewService = new InterviewService(interviewRepository);
-const interviewController = new InterviewController(interviewService);
+const interviewController = new InterviewController(interviewService, userService);
 
 const questionRepository = new QuestionRepositoryImpl();
 const questionService = new QuestionService(questionRepository, interviewRepository);
-const questionController = new QuestionController(questionService);
+const questionController = new QuestionController(questionService,userService);
 
 const questionAnswerRepository = new QuestionAnswerRepositoryImpl();
 const questionAnswerService = new QuestionAnswerService(questionAnswerRepository, interviewRepository, questionRepository);
-const questionAnswerController = new QuestionAnswerController(questionAnswerService);
+const questionAnswerController = new QuestionAnswerController(questionAnswerService,userService);
 
 export const routes = (server: express.Application) => {
   const router = express.Router();

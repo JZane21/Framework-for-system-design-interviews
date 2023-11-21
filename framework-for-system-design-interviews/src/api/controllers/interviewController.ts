@@ -15,17 +15,18 @@ import {
 import { verifyRole } from "../middlewares/verifyRoleUser";
 import { UpdateInterviewDTO } from "../../app/dtos/update.interview.dto";
 import { UserController } from "./userController";
+import { UserService } from "../../app/services/userService";
 
 export class InterviewController {
   public router: Router;
   private SECTION: string = "InterviewController";
 
   private interviewService: InterviewService;
-  private userController: UserController;
+  private userService: UserService;
 
-  constructor(interviewService: InterviewService/*,userController: UserController*/) {
+  constructor(interviewService: InterviewService,userService: UserService) {
     this.interviewService = interviewService;
-     //this.userController = userController;
+    this.userService = userService;
     this.router = Router();
     this.routes();
   }
@@ -33,20 +34,23 @@ export class InterviewController {
   public async getInterviewById(req: Request, res: Response): Promise<void> {
     try {
       const { id } = req.params;
-      loggerPrinter(this.SECTION, `Getting interview with id: ${id}`, "debug");
-      const idToVerify = this.userController.getUserById
-       const isRecruiterUser = await verifyRole(req.body.idUser);
-      //const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const idUser = req.body;
+      loggerPrinter(this.SECTION, `Getting interview with id: ${idUser}`, "debug");
+      const isRecruiterUser = await verifyRole(req.body.idUser,this.userService);
+      loggerPrinter(this.SECTION, `Getting ISRECRUITER with id: ${isRecruiterUser}`, "debug");
       const permissionDto = await this.interviewService.getInterviewByID(id, isRecruiterUser);
+      loggerPrinter(this.SECTION, `Getting permission with id: ${permissionDto}`, "debug");
       if (!permissionDto) {
         loggerPrinter(this.SECTION, `Error while getting interview with id: ${id}`, "error");
         showErrorResponse(404, res, "Interview not found");
         return;
       }
+      
       loggerPrinter(this.SECTION, `Gotten interview with id: ${id}`, "info");
       showInfoResponse(302, permissionDto, res);
     } catch (error) {
-      loggerPrinter(this.SECTION, `Error while getting interviews with id: ${req.params.id}: ${error}`, "error");
+      const id = req.params;
+      loggerPrinter(this.SECTION, `Error while getting interviews with id: ${id}: ${error}`, "error");
       showErrorResponse(404, res, error);
     }
   }
@@ -54,7 +58,7 @@ export class InterviewController {
   public async getInterviews(req: Request, res: Response): Promise<void> {
     try {
       loggerPrinter(this.SECTION, `Getting interviews`, "debug");
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser, this.userService);
       const interviewsDto = await this.interviewService.getInterviews(isRecruiterUser);
       if (!interviewsDto) {
         loggerPrinter(this.SECTION, `Error while getting interviews`, "error");
@@ -73,7 +77,7 @@ export class InterviewController {
     try {
       loggerPrinter(this.SECTION, `Creating interview`, "debug");
       const interviewDto: CreateInterviewDTO = req.body;
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser, this.userService);
       if (isRecruiterUser) {
         const interview = await this.interviewService.createInterview(interviewDto);
         if (!interview) {
@@ -97,7 +101,7 @@ export class InterviewController {
       loggerPrinter(this.SECTION, `Updaing interview`, "debug");
       const { id } = req.params;
       const updateData: UpdateInterviewDTO = req.body;
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser, this.userService);
       if (isRecruiterUser) {
         const updatedInterview = await this.interviewService.updateFormById(id, updateData);
         loggerPrinter(this.SECTION, `Updated interview succesfully`, "info");
@@ -116,7 +120,7 @@ export class InterviewController {
     try {
       loggerPrinter(this.SECTION, `deleting interview`, "debug");
       const { id } = req.params;
-      const isRecruiterUser = verifyRole(req.body.idUser, { roleId: "Recruiter" });
+      const isRecruiterUser = await verifyRole(req.body.idUser, this.userService);
       if (isRecruiterUser) {
         const deleted: boolean = await this.interviewService.deleteFormById(id);
         if (!deleted) {

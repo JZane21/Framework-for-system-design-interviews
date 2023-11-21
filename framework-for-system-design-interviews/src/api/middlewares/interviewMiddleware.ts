@@ -1,6 +1,9 @@
 import { body, param, validationResult } from "express-validator";
 import { showErrorResponse } from "../utils/responseMessage";
 import { Request, Response, NextFunction } from "express";
+import { verifyTokenMiddleware } from "./verifyToken";
+import { jwt as jwtConfig } from '../../infrastructure/config/config';
+import jwt from 'jsonwebtoken';
 
 export const interviewValidatorCreationRules = () => {
   return [
@@ -43,5 +46,21 @@ export const validate = (req: Request, res: Response, next: NextFunction) => {
   if (!errors.isEmpty()) {
     return showErrorResponse(500, res, { errors: errors.array() });
   }
+  // verifyTokenMiddleware(req,res,next);
+  const authHeader = req.headers.authorization;
+
+    if (authHeader) {
+        const token = authHeader.split(' ')[1];
+        // TODO: create interface for the token
+        jwt.verify(token, jwtConfig.secretKey, (err, user: any) => {
+            if (err) {
+                return res.status(403).json({ message: "Token no válido" });
+            }
+            req.user_id = user.userId;
+        });
+    } else {
+        res.status(401).json({ message: "Token no proporcionado" });
+    }
+
   return next();
 };
