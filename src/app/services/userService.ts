@@ -19,7 +19,8 @@ export class UserService{
             id: user.id,
             username: user.username,
             email: user.email,
-            role:user.role
+            role:user.role,
+            answers:user.answers
         }
         logger.info("Usuario obtenido con exito:")
         logger.debug(JSON.stringify(userResponse));
@@ -40,7 +41,8 @@ export class UserService{
             username: userDto.username,
             email: userDto.email,
             passwordHash: userDto.password,
-            role
+            role,
+            answers:userDto.answers
         };
         const newUser = new User(userEntity);
 

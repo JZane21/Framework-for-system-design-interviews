@@ -33,7 +33,8 @@ export class UserRepositoryImpl implements UserRepository{
             username: user.username,
             email: user.email,
             passwordHash: hash,
-            role: user.role
+            role: user.role,
+            answers:user.answers
         });
         logger.debug(JSON.stringify(userEntity)) //debug userEntity          
 
@@ -44,7 +45,9 @@ export class UserRepositoryImpl implements UserRepository{
             username: userResponse.username,
             email: userResponse.email,
             passwordHash: userResponse.passwordHash,
-            role: userResponse.role
+            role: userResponse.role,
+            answers:userResponse.answers
+
         });
     }
 
@@ -77,7 +80,7 @@ export class UserRepositoryImpl implements UserRepository{
 
         repository.merge(user, updateData);
         const updatedUser = await repository.save(user);
-        logger.debug("updateUser de userRepositoyImpl:" + updatedUser)
+        logger.debug("updateUser de userRepositoyImpl:" + JSON.stringify(updatedUser))
         return updatedUser;
     }
 }

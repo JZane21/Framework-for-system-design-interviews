@@ -6,4 +6,6 @@ export interface IUserEntity{
     passwordHash:string;
     email:string;
     role:IRoleEntity;
+    //interview:IInterviewEntity ||||||||| import IInterviewEntity
+    answers:string
 }

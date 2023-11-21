@@ -8,6 +8,8 @@ export class User{
     email:string;
     passwordHash:string;
     role:IRoleEntity;
+    //interview:IInterviewEntity   ||||| import IInterviewEntity
+    answers:string | null;
     token: string | null;
 
     constructor(userEntity:Partial<IUserEntity>){
@@ -16,5 +18,6 @@ export class User{
         this.passwordHash = userEntity.passwordHash;
         this.email = userEntity.email;
         this.role = userEntity.role;
+        this.answers = userEntity.answers
     }
 }

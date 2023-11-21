@@ -400,3 +400,54 @@ debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","
 info: UserController: User retrived succesfully {"timestamp":"20/Nov/2023:23:51:45 -0400"}
 info: ::1 - - [21/Nov/2023:03:51:45 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:23:51:45 -0400"}
 info: ::1 - - [21/Nov/2023:04:11:58 +0000] "GET /api/roles/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:11:58 -0400"}
+info: ::1 - - [21/Nov/2023:04:59:39 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:59:39 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"21/Nov/2023:00:59:43 -0400"}
+info: ::1 - - [21/Nov/2023:04:59:43 +0000] "POST /api/auth/login HTTP/1.1" 200 296 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:59:43 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+info: ::1 - - [21/Nov/2023:04:59:46 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 179 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:00:59:46 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2"} {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$7wqhH1i9TfpvYJ5sZayPTed.rqkSvZgVsmVIDA3znmG00SdCKwFwK","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+info: ::1 - - [21/Nov/2023:05:00:19 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:00:19 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$/VLtNSZ9X8eZYVscXpgIlehE.Hn7GgjB6m3Gw4ISIx6pqhzXBZ4Dq","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+info: ::1 - - [21/Nov/2023:05:01:13 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:01:13 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$f6cMo4kv9pepiU2mvEewIOb9ggQlSi/grzqZCzC8A1/GyFFW.uQhK","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+info: ::1 - - [21/Nov/2023:05:03:36 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:03:36 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$ufI1GmuvmQx9RvhEFenc2ecLwRF84aSXQZ8/p1Dck4juQSxtDfkom","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+error: UserController: Bad data was send {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+info: ::1 - - [21/Nov/2023:05:04:29 +0000] "POST /api/users HTTP/1.1" 400 83 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:04:29 -0400"}
+debug: UserController: El json dado es:{"username":"perryAnswers","email":"perryAnswers@gmail","password":"perryAnswers","roleId":"2","answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+info: Role en createUserService: {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+debug: [object Object] {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+debug: {"username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+info: ::1 - - [21/Nov/2023:05:08:13 +0000] "POST /api/users HTTP/1.1" 201 264 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:08:13 -0400"}
+debug: updateUser de userRepositoyImpl:[object Object] {"timestamp":"21/Nov/2023:01:09:49 -0400"}
+info: ::1 - - [21/Nov/2023:05:09:49 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:09:49 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+debug: {"id":"e875debb-d409-444d-978f-2be49038bc77","username":"Jose Carrasco","email":"Jose@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"},"answers":""} {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+info: ::1 - - [21/Nov/2023:05:09:53 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 200 192 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:09:53 -0400"}
+debug: updateUser de userRepositoyImpl:{"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:11:51 -0400"}
+info: ::1 - - [21/Nov/2023:05:11:51 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:11:51 -0400"}
+info: ::1 - - [21/Nov/2023:05:12:01 +0000] "GET /api/users/e875debb-d409-444d-978f-2be49038bc77 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:12:01 -0400"}
+debug: updateUser de userRepositoyImpl:{"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","passwordHash":"$2b$10$Q2Hp6ES8PRR/zAb.WMlrWu4PmEMXxb2bxLVVoPT/cRIonvCUuLsg6","answers":"1,2,3","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"}} {"timestamp":"21/Nov/2023:01:12:12 -0400"}
+info: ::1 - - [21/Nov/2023:05:12:12 +0000] "POST /api/auth/login HTTP/1.1" 200 303 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:12:12 -0400"}
+info: Usuario obtenido con exito: {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+debug: {"id":"c83f18e1-55a5-4a89-8700-bb99eed9ffe0","username":"perryAnswers","email":"perryAnswers@gmail","role":{"id":"2","roleName":"Interested","description":"Role to asist to interviews"},"answers":"1,2,3"} {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+info: UserController: User retrived succesfully {"timestamp":"21/Nov/2023:01:12:19 -0400"}
+info: ::1 - - [21/Nov/2023:05:12:19 +0000] "GET /api/users/c83f18e1-55a5-4a89-8700-bb99eed9ffe0 HTTP/1.1" 200 204 "-" "PostmanRuntime/7.35.0" {"timestamp":"21/Nov/2023:01:12:19 -0400"}
