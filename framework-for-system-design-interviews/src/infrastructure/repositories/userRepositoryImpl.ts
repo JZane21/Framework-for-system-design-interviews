@@ -35,7 +35,6 @@ export class UserRepositoryImpl implements UserRepository{
             email: user.email,
             passwordHash: hash,
             role: user.role,
-            interview: user.interview,
             answers:user.answers
         });
       

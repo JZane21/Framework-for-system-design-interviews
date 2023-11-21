@@ -5,5 +5,5 @@ export interface IQuestionEntity {
   id?: string;
   statement: string;
   interview: IInterviewEntity;
-  correctAnswer: IQuestionAnswerEntity;
+  correctAnswer: IQuestionAnswerEntity[];
 }

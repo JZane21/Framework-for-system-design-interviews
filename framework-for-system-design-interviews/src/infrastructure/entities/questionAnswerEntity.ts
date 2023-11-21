@@ -1,4 +1,4 @@
-import { PrimaryGeneratedColumn, Column, JoinColumn, OneToOne, Entity } from "typeorm";
+import { PrimaryGeneratedColumn, Column, JoinColumn, Entity, ManyToOne } from "typeorm";
 import { IQuestionAnswerEntity } from "../../domain/entities/IQuestionAnswerEntity";
 import { QuestionEntity } from "./questionEntity";
 
@@ -8,12 +8,12 @@ export class QuestionAnswerEntity implements IQuestionAnswerEntity {
   id: string;
 
   @Column({ type: 'varchar' })
-  answers: string[];
+  answers: string;
 
   @Column({ type: 'varchar' })
   rightAnswer: string;
 
-  @OneToOne(() => QuestionEntity)
+  @ManyToOne(() => QuestionEntity, question => question.correctAnswer)
   @JoinColumn({ name: 'questionId' })
   question: QuestionEntity;
 }

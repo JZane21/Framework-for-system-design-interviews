@@ -3,6 +3,7 @@ import { InterviewService } from "../../app/services/interviewService";
 import { showError, showErrorResponse, showInfoResponse } from "../utils/responseMessage";
 import { CreateInterviewDTO } from "../../app/dtos/create.interview.dto";
 import { loggerPrinter } from "../../infrastructure/utils/loggerPrinter";
+;
 import {
   validate,
   interviewValidatorCreationRules,
@@ -121,6 +122,7 @@ export class InterviewController {
           return showErrorResponse(500, res, "Could not delete interview");
         }
         loggerPrinter(this.SECTION, `deleted interview`, "info");
+        return showInfoResponse(200, deleted, res, "Deleted interview");
       } else {
         loggerPrinter(this.SECTION, `Unauthorized user!`, "error");
         return showErrorResponse(401, res, "Unauthorized user!");

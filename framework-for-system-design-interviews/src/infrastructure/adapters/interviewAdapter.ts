@@ -1,7 +1,7 @@
-import { IInterviewEntity } from "../domain/entities/IInterviewEntity";
-import { Interview } from "../domain/models/interview";
-import { CreateInterviewDTO } from "../app/dtos/create.interview.dto";
-import { InterviewDTO } from "../app/dtos/interview.dto";
+import { IInterviewEntity } from "../../domain/entities/IInterviewEntity";
+import { Interview } from "../../domain/models/interview";
+import { CreateInterviewDTO } from "../../app/dtos/create.interview.dto";
+import { InterviewDTO } from "../../app/dtos/interview.dto";
 
 export const interviewToInterviewDTO = (interview: Interview): InterviewDTO => {
   return {

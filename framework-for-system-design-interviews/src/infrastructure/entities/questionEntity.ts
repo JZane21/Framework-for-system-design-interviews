@@ -1,8 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, OneToOne } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, OneToMany } from "typeorm";
 import { IQuestionEntity } from "../../domain/entities/IQuestionEntity";
-import { IInterviewEntity } from "../../domain/entities/IInterviewEntity";
 import { InterviewEntity } from "./interviewEntity";
-import { IQuestionAnswerEntity } from "../../domain/entities/IQuestionAnswerEntity";
 import { QuestionAnswerEntity } from "./questionAnswerEntity";
 
 @Entity()
@@ -17,7 +15,7 @@ export class QuestionEntity implements IQuestionEntity {
   @JoinColumn({ name: 'interviewId' })
   interview: InterviewEntity;
 
-  @OneToOne(() => QuestionAnswerEntity)
+  @OneToMany(() => QuestionAnswerEntity, questionAnswer => questionAnswer.question)
   @JoinColumn({ name: 'questionAnswerId' })
-  correctAnswer: QuestionAnswerEntity;
+  correctAnswer: QuestionAnswerEntity[];
 }

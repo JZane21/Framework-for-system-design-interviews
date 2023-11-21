@@ -1,7 +1,7 @@
-import { QuestionAnswer } from "../domain/models/questionAnswer";
-import { QuestionAnswerDTO } from "../app/dtos/questionAnswer.dto";
-import { IQuestionAnswerEntity } from "../domain/entities/IQuestionAnswerEntity";
-import { CreateQuestionAnswerDTO } from "../app/dtos/create.questionAnswer.dto";
+import { QuestionAnswer } from "../../domain/models/questionAnswer";
+import { QuestionAnswerDTO } from "../../app/dtos/questionAnswer.dto";
+import { IQuestionAnswerEntity } from "../../domain/entities/IQuestionAnswerEntity";
+import { CreateQuestionAnswerDTO } from "../../app/dtos/create.questionAnswer.dto";
 
 export const questionAnswerToQuestionAnswerDTO = (questionAnswer: QuestionAnswer): QuestionAnswerDTO => {
   return {

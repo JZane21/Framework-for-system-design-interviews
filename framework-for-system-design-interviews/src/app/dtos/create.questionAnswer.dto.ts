@@ -1,5 +1,6 @@
 export interface CreateQuestionAnswerDTO {
   idUser: string;
-  answers: string[];
+  answers: string;
   rightAnswer: string;
+  questionId: string;
 }

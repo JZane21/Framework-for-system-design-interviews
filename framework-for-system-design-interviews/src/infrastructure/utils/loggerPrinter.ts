@@ -14,6 +14,6 @@ export const loggerPrinter = (section: string, message: string, type?: string) =
       break;
     default:
       logger.warn(`${section}: ${message}`);
-    break;
+      break;
   }
 };
